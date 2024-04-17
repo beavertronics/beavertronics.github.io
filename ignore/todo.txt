@@ -1,0 +1,9 @@
+- Get fonts/colors
+    - https://docs.google.com/presentation/d/15ZHMIcr5wwoEvilI2Sq-wtz_nylEJ5GTKsKZF4lC6U4/edit#slide=id.p 
+        - Cross reference with ADA compliant website fonts
+    - NOTE: CAN INSTALL FONTS AS A .WOFF, LOOK NEAR BOTTOM OF CSS FOR HOW TO DO IT
+    
+- Redo images?
+- Add orange blur to the splash screen with title over, maybe?
+- fix image stretching on robot page (OOWA robot)
+- Add splash screens to other pages

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="code.jquery.com/jquery-1.10.2.js"></script> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/header/ravioli.png"/> <!-- Website icon at top of tab -->
+    <link rel="stylesheet" href="./style.css"/> <!-- linking CSS -->
+    <script src="script.js"></script>
+    <title>Beavertronics</title>
+</head>
+
+<header>
+    <!-- Beavertronics logo in the top left of page -->
+    <img id=logo src="./assets/header/ravioli.png" alt="Italian Trulli"> 
+    <div id=title> 
+        BEAVERTRONICS TEAM 5970
+    </div>
+
+    <!-- links -->
+    <!-- NOTE: Set "target" to blank if you want it to open link in a new tab -->
+    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fthesageapron.com%2Fthe-best-homemade-cheese-ravioli%2F&psig=AOvVaw0uUOWF8wFhFgHu6dD6tAKI&ust=1708327044029000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNCIzaastIQDFQAAAAAdAAAAABAE -->
+    <div class="links"> 
+        
+        <a href="index.html"> 
+            <p>Home</p>  
+        </a>
+
+        <!-- <a href="resources.html"> 
+            <p>Resources</p>  
+        </a> -->
+
+        <a href="robots.html"> 
+            <p>Robots</p>  
+        </a>
+
+        <a href="outreach.html"> 
+            <p>Outreach</p>  
+        </a>
+
+        <!-- <a href="taco.html"> 
+            <p>Taco</p>  
+        </a> -->
+        
+        <!-- <a href="alastor.html"> 
+            <p>Alastor</p>  
+        </a> -->
+    </div>
+    <button class="hamburger-button" id="DropdownMenuButton">
+        <img src="assets/main/hamburgerMenuIcon.png" class="hamburger-menu-icon">
+    </button>
+    
+
+</header>
+<div class="dropdown-links hidden" id="DropdownMenu">
+    <div class="dropdown-links-background">
+        <a href="index.html" class="dropdown-link">
+            Home  
+        </a>
+        <a href="resources.html" class="dropdown-link">
+            Resources  
+        </a>
+        <a href="robots.html" class="dropdown-link">
+            Robots  
+        </a>
+        <a href="outreach.html" class="dropdown-link">
+            Outreach  
+        </a>
+        <a href="taco.html" class="dropdown-link">
+            Taco  
+        </a>
+        <a href="./alastor.html" class="dropdown-link">
+            Alastor  
+        </a>
+    </div>
+</div>
+
+
+<body>
+    <div class="splash-screen-wrapper">
+        <img class="splash-screen" src="./assets/main/2-edit-splashscreen.jpg" alt="Team picture">
+    </div>
+    <h1>
+        ABOUT OUR TEAM
+    </h1>
+    <p class="text-content">
+        We compete in the FIRST Robotics Competition to learn lessons in perseverance, teamwork, and a plethora of technical skills. Our team spends 6 short weeks every year working almost around the clock to design and build a competitive robot. Beyond this, we participate in a variety of community outreach events to engage those around us in STEM fields because we know the importance of getting young people excited and interested.
+    </p>
+    <div id="info-card-holder" class="info-card-holder" style="--gap-amount: 2%">
+        <div class="info-card">
+            <div class="info-card-overlay"> 
+                <b>SAFTEY</b>       
+                <br><br>
+                We dedicate ourselves to preserving the safety of our team members. Power tools are the most fun when used safely! The Safety Captain oversees safety tests and the enforcement of safety regulations.
+            </div>
+            <img src="https://static.wixstatic.com/media/cbe77e_13e422cfa1ec47e092ded8cf8fd5691f~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_13e422cfa1ec47e092ded8cf8fd5691f~mv2.jpg" class="img">
+        </div>
+        <div class="info-card">
+            <div class="info-card-overlay">
+                <b>BUILD</b>
+                <br><br>
+                Team members machine parts using power tools such as the band saw, drill press, CNC mill, and 3D printer. We also assemble parts using a variety of fasteners.</div>
+            <img src="https://static.wixstatic.com/media/cbe77e_bad328631b8a45efa236b1265a13b569~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_bad328631b8a45efa236b1265a13b569~mv2.jpg" class="img">
+        </div>
+        <div class="info-card">
+            <div class="info-card-overlay">
+                <b>CONTROL SYSTEMS</b> 
+                <br><br>
+                Students and mentors partner to teach incoming members to wire electrical boards and program in Python. The electrical and programming subteams work in tandem with the goal of a smoothly functioning control system.</div>
+            <img src="https://static.wixstatic.com/media/cbe77e_8110a7825dfc4a1f82d60bdcb8a40177~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_8110a7825dfc4a1f82d60bdcb8a40177~mv2.jpg" class="img">
+        </div>
+        <div class="info-card">
+            <div class="info-card-overlay">
+                <b>DESIGN</b>
+                <br><br>
+                Our team strategically designs each robot with feasability, simplicity, and awesomeness all in mind; the CAD team makes these dreams into a reality.</div>
+            <img src="https://static.wixstatic.com/media/cbe77e_85f3406992e241ef9988ef2bc1cbbeb2~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_85f3406992e241ef9988ef2bc1cbbeb2~mv2.jpg" class="img">
+        </div>
+        <div class="info-card">
+            <div class="info-card-overlay">
+                <b>MARKETING</b>
+                <br><br>
+                Students learn first-hand how to create consistent branding, talk to sponsors, write grants, and empower a team. Our marketing team spreads word of our program throughout the community of FIRST and beyond.</div>
+            <img src="https://static.wixstatic.com/media/cbe77e_8e783eac4ef54a13b61999a50ed63382~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_8e783eac4ef54a13b61999a50ed63382~mv2.jpg" class="img">
+        </div>
+        <div class="info-card">
+            <div class="info-card-overlay">
+                <b>COMMUNITY DEVELOPMENT</b>
+                <br><br>
+                Integral to our team mission is the idea of exposing our community to STEM and FIRST. We believe that all deserve the opportunity to participate in the scientific development of our world; the earlier we can make a difference, the better!</div>
+            <img src="https://static.wixstatic.com/media/cbe77e_31ae767b94c24dfdb2c4337c17eecf90~mv2_d_3600_2400_s_4_2.jpg/v1/fill/w_284,h_419,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_31ae767b94c24dfdb2c4337c17eecf90~mv2_d_3600_2400_s_4_2.jpg" class="img">
+        </div>
+    </div>
+    <!-- <img src="./assets/main/riggatoni.webp" class="body-img"> --> <!-- important -->
+</body>
+
+
+<footer class="footer">
+    <div class="icon-wrapper">
+        <a href="https://www.facebook.com/Beavertronics-Team-5970-453426894846186/?ref=hl"><img class="footer-scale" src="assets/footer/facebook.webp"></a>
+        <a href="https://twitter.com/Beav5970"><img class="footer-scale" src="assets/footer/twitter.webp"></a>
+        <a href="https://www.instagram.com/beavertonhigh.robotics/"><img class="footer-scale" src="assets/footer/instagram.webp"></a>
+        <a href="javascript:navigator.clipboard.writeText(&quot;heather_meiring@beaverton.k12.or.us&quot;);alert(&quot;Email copied!&quot;)" class="footer-scale"><img class="footer-scale" src="assets/footer/email.png"></a>
+    </div>
+    <p>Developed by Ansh P & Collin W ● 2024</p>
+</footer>
+
+
+</html>

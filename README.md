@@ -1,2 +1,30 @@
-# BeavertronicsWebsite
-This repository is for code and files for the Beavertronics Team 5970 Website
+Official website for the FIRST Robotics Team, 5970, Beavertronics!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A whole bag of jellybeans?
