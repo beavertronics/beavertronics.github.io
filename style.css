@@ -310,7 +310,7 @@ a:hover{
 }
 
 .outreach-image-text {
-  display: flex;
+  display: flex; 
   flex-direction: column;
   margin-left: 2.5%;
   margin-right: 2.5%;
