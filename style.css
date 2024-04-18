@@ -229,7 +229,6 @@ a:hover{
   flex-direction: column;
   max-height: 575px;
   overflow: hidden;
-
 }
 
 /* editing the footer at the bottom of the page */
@@ -244,7 +243,6 @@ a:hover{
   font-family: Futura;
   color: white;
 }
-
 
 
 /* icon wrapper */
