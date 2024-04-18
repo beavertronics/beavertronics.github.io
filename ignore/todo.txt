@@ -7,3 +7,6 @@
 - Add orange blur to the splash screen with title over, maybe?
 - fix image stretching on robot page (OOWA robot)
 - Add splash screens to other pages
+
+- Image gallery feature to image gallery page
+    - https://www.w3schools.com/howto/howto_js_lightbox.asp
