@@ -295,6 +295,11 @@ a:hover{
   text-align: center;
 }
 
+.robot-title-link {
+  color: black;
+  /* text-decoration: underline; */
+}
+
 .outreach-images {
   position: relative;
   justify-content: center;
