@@ -40,6 +40,11 @@ h1{
   margin-bottom: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+h2{  
+  text-align: center;
+  font-weight: 100;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 /*--------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------*/
@@ -67,14 +72,30 @@ h1{
   white-space: nowrap;
   
 }
-a {
+.links a {
   text-decoration: none;
   color: white;
   transition: color 0.2s;
-  
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s;
 }
 
-a:hover{
+.links a:hover{
+  color: #d0d0d0
+}
+.footer a:hover {
+  color: #d0d0d0
+}
+
+.dropdown-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s;
+}
+.dropdown-link:hover {
   color: #d0d0d0
 }
 
