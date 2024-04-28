@@ -445,3 +445,8 @@ html, body {
     display: none;
   }
 }
+
+.calendar {
+  display: block;
+  margin: 0 auto;
+}
