@@ -186,8 +186,7 @@ a:hover{
 }
 /* blur and dim background on hover*/
 .info-card:hover img{
-  filter: blur(4px);
-  filter: brightness(60%)
+  filter: blur(4px) brightness(50%);
 }
 
 /* image */
