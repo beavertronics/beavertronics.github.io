@@ -449,4 +449,5 @@ html, body {
 .calendar {
   display: block;
   margin: 0 auto;
+  padding-bottom: 2.5%;
 }
