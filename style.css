@@ -278,36 +278,6 @@ a:hover{
   border-radius: 2.5px;
 }
 
-.robot-title-mobile {
-  font-weight: bolder;
-  font-size: 5vw;
-  font-family: Futura, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: center;
-  margin-top: 5%;
-}
-
-.robot-images-mobile {
-  margin: auto;
-  width: 50%;
-  margin-bottom: 1%;
-  margin-top: 3%;
-}
-
-.robot-images-mobile img {
-  width: 100%;
-  height: auto;
-  border-radius: 2.5px;
-}
-
-.robot-description-text-mobile {
-  margin-top: 1%;
-  margin-left: 5%;
-  margin-right: 5%;
-  font-size: 95%;
-  font-family: Futura;
-  text-align: center;
-}
-
 .robot-description {
   display: flex;
   margin-bottom: 5%;
