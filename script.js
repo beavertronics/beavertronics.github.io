@@ -1,3 +1,6 @@
+const calendar_lower_width_limit = 850; // I found this number by shrinking the page until the calendar seemed too dificult to read
+const robots_lower_width_limit = 1120; // I found this number by shrinking the page until the robot image was squished enough to look weird
+
 // runs on load of webpage
 window.addEventListener('load', function () {
   // get page name for general use
@@ -7,12 +10,16 @@ window.addEventListener('load', function () {
   let dropdownMenuButton = document.getElementById("DropdownMenuButton");
   dropdownMenuButton.addEventListener("click", toggleDropdownMenu);
 
-  // if page is robots, run formatting for that page
-  if (page_name.includes('robots.html')) {
-    scaleRobotsOnLoad();
+  // identify what page user is on, and run function to format that page
+  if (page_name.includes('index.html')) {
+    indexOnLoad();
+  }
+  else if (page_name.includes('robots.html')) {
+    robotsOnLoad();
   }
 }
 )
+
 
 // toggles dropdown menu, is a listener-called function on the drop down menu hamburger button
 function toggleDropdownMenu() {
@@ -20,13 +27,24 @@ function toggleDropdownMenu() {
     dropdownMenu.classList.toggle("hidden");
 }
 
-// re-organizes the robots page depending on screen size
-function scaleRobotsOnLoad() {
-  let current_screen_width = window.innerWidth; // https://www.w3schools.com/howto/howto_js_get_current_window.asp
-  let lower_width_limit = 1120 // I found this number by shrinking the page until the robot image was squished enough to look weird
-  if (current_screen_width <= lower_width_limit) {
-    
-    // SOMETHING GOES HERE EVENTUALLY TO POSITION ROBOT IMAGES AND TEXT VERTICALLY INSTEAD OF HORIZONTALLY
 
+// formatting for index page
+function indexOnLoad() {
+  let current_screen_width = window.innerWidth;
+  if (current_screen_width <= calendar_lower_width_limit) {
+    calendar = document.getElementById("google calendar");
+    // calendar.classList.toggle("hidden");
+    calendar.remove();
+    alt_text = document.getElementById("alt calendar text");
+    alt_text.classList.toggle("visible");
+  }
+}
+
+
+// formatting for robots page
+function robotsOnLoad() {
+  let current_screen_width = window.innerWidth; // https://www.w3schools.com/howto/howto_js_get_current_window.asp
+  if (current_screen_width <= robots_lower_width_limit) {
+    window.location.href = "./mobile/robots-mobile.html";
   }
 }
