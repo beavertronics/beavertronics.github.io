@@ -99,6 +99,7 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
+  padding: 2vw;
 }
 
 /* Hide the images by default */
