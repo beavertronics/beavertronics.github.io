@@ -11,4 +11,3 @@
     - https://www.w3schools.com/howto/howto_js_lightbox.asp
 
 - Code the DLC page
-- Code the mobile page for Outreach
