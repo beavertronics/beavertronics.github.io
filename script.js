@@ -1,5 +1,6 @@
 const calendar_lower_width_limit = 850; // I found this number by shrinking the page until the calendar seemed too dificult to read
 const robots_lower_width_limit = 1120; // I found this number by shrinking the page until the robot image was squished enough to look weird
+const outreach_lower_width_limit = 975; // You know how I found this at this point
 
 // runs on load of webpage
 window.addEventListener('load', function () {
@@ -16,6 +17,9 @@ window.addEventListener('load', function () {
   }
   else if (page_name.includes('robots.html')) {
     robotsOnLoad();
+  }
+  else if (page_name.includes('outreach.html')) {
+    outreachOnLoad();
   }
 }
 )
@@ -47,4 +51,13 @@ function robotsOnLoad() {
   if (current_screen_width <= robots_lower_width_limit) {
     window.location.href = "./mobile pages/robots-mobile.html";
   }
+}
+
+
+// formatting for outreach page
+function outreachOnLoad() {
+  let current_screen_width = window.innerWidth;
+  if (current_screen_width <= outreach_lower_width_limit) {
+    window.location.href = "./mobile pages/outreach-mobile.html";
+  } 
 }
