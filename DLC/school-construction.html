@@ -13,11 +13,16 @@
 
 
 <header>
-    <a class="header-link" href="../DLC.html">
+    <!-- <a class="header-link" href="../DLC.html">
         <h1 class="header-text">
             Back
         </h1>
-    </a>
+    </a> -->
+    <h1 class="header-text">
+        <a class="header-link" href="../DLC.html">
+            Back
+        </a>
+    </h1>
 </header>
 
 
@@ -44,14 +49,22 @@
 
         .header-text {
             text-align: center;
-            color: white;
         }
 
         .header-link {
-            text-decoration: none;    
+            text-decoration: none;
+            color: white;
+
+            /* idk some stack overflow stuff */
+            /* https://stackoverflow.com/questions/11078509/how-to-increase-the-clickable-area-of-a-a-tag-button */
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            padding: 1em;
+            margin: -2em;
         }
 
-        .header-link :hover {
+        .header-text :hover {
             color: gray;
         }
 

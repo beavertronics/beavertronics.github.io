@@ -45,6 +45,6 @@ function indexOnLoad() {
 function robotsOnLoad() {
   let current_screen_width = window.innerWidth; // https://www.w3schools.com/howto/howto_js_get_current_window.asp
   if (current_screen_width <= robots_lower_width_limit) {
-    window.location.href = "./mobile/robots-mobile.html";
+    window.location.href = "./mobile pages/robots-mobile.html";
   }
 }
