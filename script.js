@@ -1,7 +1,7 @@
 const calendar_lower_width_limit = 850; // I found this number by shrinking the page until the calendar seemed too dificult to read
 const robots_lower_width_limit = 1120; // I found this number by shrinking the page until the robot image was squished enough to look weird
 const outreach_lower_width_limit = 975; // You know how I found this at this point
-const web_url = 'https://beavertronics.github.io/5970'
+const web_url = 'https://beavertronics.github.io/5970';
 // const web_url = 'http://127.0.0.1:5501/' // for testing purposes 
 
 // runs on load of webpage
@@ -14,7 +14,10 @@ window.addEventListener('load', function () {
   dropdownMenuButton.addEventListener("click", toggleDropdownMenu);
 
   // identify what page user is on, and run function to format that page
-  if (page_name.includes('index.html' | page_name === web_url)) {
+  if (page_name.includes('index.html')) {
+    indexOnLoad();
+  }
+  else if (page_name === web_url) { // other test case
     indexOnLoad();
   }
   else if (page_name.includes('robots.html')) {
