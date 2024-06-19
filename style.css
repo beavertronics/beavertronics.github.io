@@ -434,6 +434,10 @@ html, body {
   visibility: hidden;
 }
 
+.visible {
+  visibility: visible;
+}
+
 @media (max-width: 1350px) {
 
   .links {

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script src="code.jquery.com/jquery-1.10.2.js"></script> 
-<head>
+<script src="code.jquery.com/jquery-1.10.2.js"></script> <!-- ??? -->
+</head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/header/ravioli.png"/> <!-- Website icon at top of tab -->
@@ -13,6 +13,7 @@
 
 <header>
     <!-- Beavertronics logo in the top left of page -->
+     <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fthesageapron.com%2Fthe-best-homemade-cheese-ravioli%2F&psig=AOvVaw0uUOWF8wFhFgHu6dD6tAKI&ust=1708327044029000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNCIzaastIQDFQAAAAAdAAAAABAE -->
     <img id=logo src="./assets/header/ravioli.png" alt="Italian Trulli"> 
     <div id=title> 
         <a href="./index.html">
@@ -21,10 +22,7 @@
     </div>
 
     <!-- links -->
-    <!-- NOTE: Set "target" to blank if you want it to open link in a new tab -->
-    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fthesageapron.com%2Fthe-best-homemade-cheese-ravioli%2F&psig=AOvVaw0uUOWF8wFhFgHu6dD6tAKI&ust=1708327044029000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNCIzaastIQDFQAAAAAdAAAAABAE -->
     <div class="links"> 
-        
         <a href="index.html"> 
             <p>Home</p>  
         </a>
@@ -41,9 +39,11 @@
             <p>Outreach</p>  
         </a>
 
-        <a href="DLC/school-construction.html">
-            <p>School Construction</p>
+        <!-- <a href="DLC/school-construction.html"> -->
+        <a href="DLC.html">
+            <p>DLC</p>
         </a>
+
         <!-- <a href="taco.html"> 
             <p>Taco</p>  
         </a> -->
@@ -52,36 +52,41 @@
             <p>Alastor</p>  
         </a> -->
     </div>
-    <!-- Button for mobile -->
-    <button class="hamburger-button" id="DropdownMenuButton">
-        <!-- <img src="assets/main/hamburgerMenuIcon.png" class="hamburger-menu-icon"> -->
-         <img src="assets/header/hamburg/hamburgerMenuIcon.png" class="hamburger-menu-icon">
-    </button>
-    
 
+    <!-- dropdown menu button -->
+    <button class="hamburger-button" id="DropdownMenuButton">
+        <img src="assets/header/hamburg/hamburgerMenuIcon.png" class="hamburger-menu-icon">
+    </button>
 </header>
+
+
+<!-- dropdown menu links -->
 <div class="dropdown-links hidden" id="DropdownMenu">
     <div class="dropdown-links-background">
         <a href="index.html" class="dropdown-link">
             Home  
         </a>
+
         <!-- <a href="resources.html" class="dropdown-link">
             Resources  
         </a> -->
+
         <a href="robots.html" class="dropdown-link">
             Robots  
         </a>
+
         <a href="outreach.html" class="dropdown-link">
             Outreach  
         </a>
 
-        <a href="DLC/school-construction.html"" class="dropdown-link">
-            School Construction
+        <a href="DLC.html" class="dropdown-link">
+            DLC
         </a>
 
         <!-- <a href="taco.html" class="dropdown-link">
             Taco  
         </a>
+
         <a href="./alastor.html" class="dropdown-link">
             Alastor  
         </a> -->
@@ -90,15 +95,20 @@
 
 
 <body>
+    <!-- splash screen at top of page -->
     <div class="splash-screen-wrapper">
         <img class="splash-screen" src="./assets/main/2-edit-splashscreen.jpg" alt="Team picture">
     </div>
+
+    <!-- info about our team -->
     <h1>
         ABOUT OUR TEAM
     </h1>
     <p class="text-content">
         We compete in the FIRST Robotics Competition to learn lessons in perseverance, teamwork, and a plethora of technical skills. Our team, <b>which is 100% student led</b>, spends 6 short weeks every year working almost around the clock to design and build a competitive robot. Beyond this, we participate in a variety of community outreach events to engage those around us in STEM fields because we know the importance of getting young people excited and interested.
     </p>
+
+    <!-- info cards -->
     <div id="info-card-holder" class="info-card-holder" style="--gap-amount: 2%">
         <div class="info-card">
             <div class="info-card-overlay"> 
@@ -108,6 +118,7 @@
             </div>
             <img src="https://static.wixstatic.com/media/cbe77e_13e422cfa1ec47e092ded8cf8fd5691f~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_13e422cfa1ec47e092ded8cf8fd5691f~mv2.jpg" class="img">
         </div>
+
         <div class="info-card">
             <div class="info-card-overlay">
                 <b>BUILD</b>
@@ -115,6 +126,7 @@
                 Team members fabricate parts using our band saw, miter saw, drill presses, CNC router, and 3D printer. We also assemble parts using a variety of fasteners.</div>
             <img src="https://static.wixstatic.com/media/cbe77e_bad328631b8a45efa236b1265a13b569~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_bad328631b8a45efa236b1265a13b569~mv2.jpg" class="img">
         </div>
+
         <div class="info-card">
             <div class="info-card-overlay">
                 <b>CONTROL SYSTEMS</b> 
@@ -122,6 +134,7 @@
                 Students and mentors partner to teach incoming members to wire electrical boards and program in Kotlin. The electrical and programming subteams work in tandem with the goal of a smoothly functioning control system.</div>
             <img src="https://static.wixstatic.com/media/cbe77e_8110a7825dfc4a1f82d60bdcb8a40177~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_8110a7825dfc4a1f82d60bdcb8a40177~mv2.jpg" class="img">
         </div>
+
         <div class="info-card">
             <div class="info-card-overlay">
                 <b>DESIGN</b>
@@ -129,6 +142,7 @@
                 Our team strategically designs each robot with feasability, simplicity, and awesomeness all in mind, based on a thorough analysis of each year's game. We experiment with ideas by making prototypes out of scrap wood. Once we have a good idea of what we want the robot to do and how we want it to do it, we flesh out the details using Onshape, a cloud-based CAD software. Finally, the CAD is thoroughly reviewed, both by students and by our experienced mentors, before manufacturing and assembly take place.</div>
             <img src="https://static.wixstatic.com/media/cbe77e_85f3406992e241ef9988ef2bc1cbbeb2~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_85f3406992e241ef9988ef2bc1cbbeb2~mv2.jpg" class="img">
         </div>
+
         <div class="info-card">
             <div class="info-card-overlay">
                 <b>MARKETING</b>
@@ -136,6 +150,7 @@
                 Students learn first-hand how to create consistent branding, talk to sponsors, write grants, and empower a team. Our marketing team spreads word of our program throughout the community of FIRST and beyond.</div>
             <img src="https://static.wixstatic.com/media/cbe77e_8e783eac4ef54a13b61999a50ed63382~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_8e783eac4ef54a13b61999a50ed63382~mv2.jpg" class="img">
         </div>
+
         <div class="info-card">
             <div class="info-card-overlay">
                 <b>COMMUNITY DEVELOPMENT</b>
@@ -144,31 +159,40 @@
             <img src="https://static.wixstatic.com/media/cbe77e_31ae767b94c24dfdb2c4337c17eecf90~mv2_d_3600_2400_s_4_2.jpg/v1/fill/w_284,h_419,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_31ae767b94c24dfdb2c4337c17eecf90~mv2_d_3600_2400_s_4_2.jpg" class="img">
         </div>
     </div>
+
+    <!-- link calendar on text, and display below -->
     <!-- <img src="./assets/main/riggatoni.webp" class="body-img"> --> <!-- important -->
     <h1><a style="color: black; text-decoration: underline;" target="_blank" href="https://calendar.google.com/calendar/u/0/r?cid=beavertronics5970@gmail.com">Calendar</a></h1>
     <!-- <iframe src="https://calendar.google.com/calendar/embed?src=beavertronics5970%40gmail.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" class="calendar"></iframe> -->
-    <iframe class="calendar" style="width: 40vw; height: 30vw;" scrolling="no" id="google-calendar" src="https://calendar.google.com/calendar/embed?src=beavertronics5970%40gmail.com&ctz=America%2FLos_Angeles"></iframe>
+    <iframe class="calendar" style="width: 40vw; height: 30vw;" scrolling="no" id="google calendar" src="https://calendar.google.com/calendar/embed?src=beavertronics5970%40gmail.com&ctz=America%2FLos_Angeles"></iframe>
+    <p id="alt calendar text" style="text-align: center;" class="hidden">Sorry, the screen is too small for the calendar to be displayed. Please click the "Calendar" text above, or click <a style="color: blue;" target="_blank" href="https://calendar.google.com/calendar/u/0/r?cid=beavertronics5970@gmail.com">here</a> open the calendar in a different page!</p>
 </body>
 
+
 <footer class="footer">
+    <!-- images -->
     <div class="icon-wrapper">
         <a href="https://www.facebook.com/Beavertronics-Team-5970-453426894846186/?ref=hl" target=”_blank”><img class="footer-scale" src="assets/footer/facebook.webp"></a>
         <a href="https://twitter.com/Beav5970" target=”_blank”><img class="footer-scale" src="assets/footer/twitter.webp"></a>
         <a href="https://www.instagram.com/beavertonhigh.robotics/" target=”_blank”><img class="footer-scale" src="assets/footer/instagram.webp"></a>
         <a href="javascript:navigator.clipboard.writeText(&quot;heather_meiring@beaverton.k12.or.us&quot;);alert(&quot;Email copied!&quot;)" class="footer-scale"><img class="footer-scale" src="assets/footer/email.png"></a>
     </div>
-    <!-- <p>
+
+    <!-- text -->
+    <!-- <p>Developed by Ansh P & Collin W - 2024</p> -->
+    <p>
+        <a href="./credits.html">credits</a>
+        ● 
+        <a href='https://forms.gle/vtFWX3jtFac88Gsa9' target="_blank">feedback</a>
+        ● 
+        <a href="https://beavertronics5970.wixsite.com/bhs-robotics" target="_blank">legacy website</a>
+    </p>
+
+    <!-- previous footer text -->
+     <!-- <p>
         <a href="https://beavertronics5970.wixsite.com/bhs-robotics" target="_blank">legacy website </a>
         ● Developed by Ansh P & Collin W - 2024 ● 
         <a href='https://forms.gle/vtFWX3jtFac88Gsa9' target="_blank">feedback</a>
     </p> -->
-    <p>Developed by Ansh P & Collin W - 2024</p>
-    <p>
-        <a href='https://forms.gle/vtFWX3jtFac88Gsa9' target="_blank">feedback ●</a>
-        <a href="https://beavertronics5970.wixsite.com/bhs-robotics" target="_blank"> legacy website</a>
-    </p>
-
 </footer>
-
-
 </html>

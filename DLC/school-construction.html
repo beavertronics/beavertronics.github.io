@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script src="code.jquery.com/jquery-1.10.2.js"></script> 
-<head>
+<script src="code.jquery.com/jquery-1.10.2.js"></script> <!-- ??? -->
+</head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../assets/header/ravioli.png"/> <!-- Website icon at top of tab -->
-    <!-- <link rel="stylesheet" href="../style.css"/> linking CSS -->
-    <script src="../script.js"></script>
+    <!-- <link rel="stylesheet" href="../style.css"/> -->
+    <!-- <script src="../script.js"></script> -->
     <title>Beavertronics</title>
 </head>
 
+
 <header>
-    <a class="header-link" href="../index.html">
+    <!-- <a class="header-link" href="../DLC.html">
         <h1 class="header-text">
-            Home
+            Back
         </h1>
-        <!-- <img class="header-text" src="../assets/pages/dlc/school-construction/house_icon.png"> -->
-    </a>
+    </a> -->
+    <h1 class="header-text">
+        <a class="header-link" href="../DLC.html">
+            Back
+        </a>
+    </h1>
 </header>
 
 
 <body> 
+    <!-- all styling -->
     <style>
-        /* Apply CSS to make the iframe fill the entire screen */
         body, html {
             margin: 0;
             padding: 0;
@@ -44,15 +49,27 @@
 
         .header-text {
             text-align: center;
-            color: white;
         }
 
         .header-link {
-            text-decoration: none;    
+            text-decoration: none;
+            color: white;
+
+            /* idk some stack overflow stuff */
+            /* https://stackoverflow.com/questions/11078509/how-to-increase-the-clickable-area-of-a-a-tag-button */
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            padding: 1em;
+            margin: -2em;
         }
 
-        .header-link :hover {
+        .header-text :hover {
             color: gray;
+        }
+
+        footer {
+            padding: 2vw;
         }
 
         iframe {
@@ -61,30 +78,14 @@
             border: none; /* Remove iframe border */
         }
     </style>
+
+    <!-- video embed -->
     <iframe allowfullscreen=True
         src="https://dwpwebcams.com/bhs/canvasvideo1.php">
     </iframe>
 </body>
 
-<footer class="footer">
-    <!-- <div class="icon-wrapper">
-        <a href="https://www.facebook.com/Beavertronics-Team-5970-453426894846186/?ref=hl" target=”_blank”><img class="footer-scale" src="../assets/footer/facebook.webp"></a>
-        <a href="https://twitter.com/Beav5970" target=”_blank”><img class="footer-scale" src="../assets/footer/twitter.webp"></a>
-        <a href="https://www.instagram.com/beavertonhigh.robotics/" target=”_blank”><img class="footer-scale" src="../assets/footer/instagram.webp"></a>
-        <a href="javascript:navigator.clipboard.writeText(&quot;heather_meiring@beaverton.k12.or.us&quot;);alert(&quot;Email copied!&quot;)" class="footer-scale"><img class="footer-scale" src="../assets/footer/email.png"></a>
-    </div> -->
-    <!-- <p>
-        <a href="https://beavertronics5970.wixsite.com/bhs-robotics" target="_blank">legacy website </a>
-        ● Developed by Ansh P & Collin W - 2024 ● 
-        <a href='https://forms.gle/vtFWX3jtFac88Gsa9' target="_blank">feedback</a>
-    </p> -->
-    <!-- <p>Developed by Ansh P & Collin W - 2024</p>
-    <p>
-        <a href='https://forms.gle/vtFWX3jtFac88Gsa9' target="_blank">feedback ●</a>
-        <a href="https://beavertronics5970.wixsite.com/bhs-robotics" target="_blank"> legacy website</a>
-    </p> -->
 
-</footer>
-
-
+<!-- just for spacing -->
+<footer></footer>
 </html>

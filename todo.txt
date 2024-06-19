@@ -3,10 +3,11 @@
         - Cross reference with ADA compliant website fonts
     - NOTE: CAN INSTALL FONTS AS A .WOFF, LOOK NEAR BOTTOM OF CSS FOR HOW TO DO IT
     
-- Redo images?
+- Redo images on the cards on the main page
 - Add orange blur to the splash screen with title over, maybe?
-- fix image stretching on robot page (OOWA robot)
-- Add splash screens to other pages
+- Add splash screens to other pages?
 
 - Image gallery feature to image gallery page
     - https://www.w3schools.com/howto/howto_js_lightbox.asp
+
+- Code the DLC page
