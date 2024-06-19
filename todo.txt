@@ -9,5 +9,3 @@
 
 - Image gallery feature to image gallery page
     - https://www.w3schools.com/howto/howto_js_lightbox.asp
-
-- Code the DLC page
