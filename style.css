@@ -390,9 +390,10 @@ a:hover{
 
 .hamburger-button {
   position: relative;
-  /* margin-left: auto; */
+  margin-left: auto;
   /* right: 32px; */
-  left: 19vw;
+  left: 12vw;
+  margin-right: auto;
   background-color:rgba(0,0, 0, 0);
   border: rgba(0,0,0,0);
   cursor: pointer;
