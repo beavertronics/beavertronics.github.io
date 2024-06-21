@@ -1,7 +1,8 @@
 /* fonts */
 @font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
     font-family: Futura;
-    src: url('./assets/fonts/FuturaLT-Light.woff')
+    /* src: url('./assets/fonts/FuturaLT-Light.woff') */
+    src: url('../assets/fonts/FuturaLT-Light.woff');
 }
 
 /* -------------------------------------------------------------------------------------- */
