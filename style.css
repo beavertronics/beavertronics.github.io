@@ -391,9 +391,7 @@ a:hover{
 .hamburger-button {
   position: relative;
   margin-left: auto;
-  right: 32px !important;
-  /* left: 12vw; */
-  /* margin-right: auto; */
+  right: 32px;
   background-color:rgba(0,0, 0, 0);
   border: rgba(0,0,0,0);
   cursor: pointer;
@@ -407,13 +405,15 @@ a:hover{
   width: 100vw;
   display: flex;
   justify-content: right;
-  padding-right: 32px;
+  /* padding-right: 32px; */
+  padding-right: 16vw;
 
 }
 .dropdown-links-background {
   margin-left: auto;
   width: min-content;
   padding-left: 32px;
+  padding-left: 8vw;
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 119, 40);
@@ -423,11 +423,13 @@ a:hover{
   width: calc(100% - 32px);
   position: relative;
   font-size: 4vh;
-  margin-right: 32px;
+  /* margin-right: 32px; */
+  margin-right: 8vw;
   text-align: right;
   font-family: Futura;
   /* margin-left: auto; */
 }
+
 html, body {
   overflow-x: hidden;
 }
