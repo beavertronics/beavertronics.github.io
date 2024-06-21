@@ -405,15 +405,13 @@ a:hover{
   width: 100vw;
   display: flex;
   justify-content: right;
-  /* padding-right: 32px; */
-  padding-right: 16vw;
+  padding-right: 32px;
 
 }
 .dropdown-links-background {
   margin-left: auto;
   width: min-content;
   padding-left: 32px;
-  padding-left: 8vw;
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 119, 40);
@@ -423,13 +421,11 @@ a:hover{
   width: calc(100% - 32px);
   position: relative;
   font-size: 4vh;
-  /* margin-right: 32px; */
-  margin-right: 8vw;
+  margin-right: 32px;
   text-align: right;
   font-family: Futura;
   /* margin-left: auto; */
 }
-
 html, body {
   overflow-x: hidden;
 }
