@@ -388,9 +388,12 @@ a:hover{
   width: auto; */
 
   /* THE BELOW CODE IS STOLEN FROM COLLINS WEBSITE, THANKS COLLIN */
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
+  /* margin-right: 10px; */
+  margin-right: 1vw;
+  /* width: 30px; */
+  width: 5.5vw;
+  /* height: 30px; */
+  height: 5.5vw;
   cursor: pointer;
   background-color: black;
   mask-image: url("./assets/header//hamburg/hamburgerMenuIcon.png");
@@ -400,7 +403,8 @@ a:hover{
 .hamburger-button {
   position: relative;
   margin-left: auto;
-  right: 32px;
+  /* right: 32px; */
+  right: 3vw;
   background-color:rgba(0,0, 0, 0);
   border: rgba(0,0,0,0);
   cursor: pointer;
