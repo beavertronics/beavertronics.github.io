@@ -18,7 +18,8 @@ window.addEventListener('load', function () {
     indexOnLoad();
   }
   else if (page_name === web_url) { // other test case
-    indexOnLoad();
+    // indexOnLoad();
+    window.location.href = "./index.html"; // force them into the index.html
   }
   else if (page_name.includes('robots.html')) {
     robotsOnLoad();
