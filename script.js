@@ -12,14 +12,7 @@ window.addEventListener('load', function () {
   let dropdownMenuButton = document.getElementById("DropdownMenuButton");
   dropdownMenuButton.addEventListener("click", toggleDropdownMenu);
 
-  pageLoader();
-}
-)
-
-
-
-// handles redirecting to other pages, and loading them - goes before anything on the page to optimize time
-function pageLoader() {
+  // handles redirecting to other pages, and loading them - goes before anything on the page to optimize time
   //get page name
   let page_name = location.toString(); // https://stackoverflow.com/questions/16611497/how-can-i-get-the-name-of-an-html-page-in-javascript
   if (page_name === web_url) {
@@ -36,6 +29,7 @@ function pageLoader() {
     outreachOnLoad();
   }
 }
+)
 
 
 
