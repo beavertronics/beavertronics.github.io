@@ -384,8 +384,17 @@ a:hover{
 }
 
 .hamburger-menu-icon {
-  height: 40%;
-  width: auto;
+  /* height: 40%;
+  width: auto; */
+
+  /* THE BELOW CODE IS STOLEN FROM COLLINS WEBSITE, THANKS COLLIN */
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: black;
+  mask-image: url("./assets/header//hamburg/hamburgerMenuIcon.png");
+  mask-size: cover;
 }
 
 .hamburger-button {
@@ -395,6 +404,15 @@ a:hover{
   background-color:rgba(0,0, 0, 0);
   border: rgba(0,0,0,0);
   cursor: pointer;
+
+  /* THE BELOW CODE IS STOLEN FROM COLLINS WEBSITE, THANKS COLLIN */
+  /* margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  mask-image: url("./assets/header/hamburg/hamburgerMenuIcon.png");
+  mask-size: cover; */
 }
 
 .dropdown-links {
@@ -438,14 +456,26 @@ html, body {
   visibility: visible;
 }
 
-@media (max-width: 1350px) {
+/* THE BELOW CODE IS STOLEN FROM COLLINS WEBSITE, THANKS COLLIN */
+@media (max-width: 850px) {
 
   .links {
     display: none;
   }
+
+  .hamburger-menu-icon {
+    display: inline;
+  }
+  .dropdown-links-background {
+    display: inline;
+  }
 }
 
-@media (min-width: 1350px) {
+/* THE BELOW CODE IS STOLEN FROM COLLINS WEBSITE, THANKS COLLIN */
+@media (min-width: 850px) {
+  /* .links a {
+    display: none;
+  } */
 
   .hamburger-menu-icon {
     display: none;
