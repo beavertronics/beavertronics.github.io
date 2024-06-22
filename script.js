@@ -3,30 +3,26 @@ const robots_lower_width_limit = 1120; // I found this number by shrinking the p
 const outreach_lower_width_limit = 975; // You know how I found this at this point
 const web_url = 'https://beavertronics.github.io/5970/';
 // const web_url = 'http://127.0.0.1:5501/' // for testing purposes 
-
-
+const PAGE_URL = location.toString() // https://stackoverflow.com/questions/16611497/how-can-i-get-the-name-of-an-html-page-in-javascript
+if ((PAGE_URL.includes('index.html')) === false) {
+  if (PAGE_URL === web_url) {
+    window.location.href = "./index.html"; // force them into index.html for properly reading urlyou
+  }
+  if (PAGE_URL.includes('robots.html')) {
+    robotsOnLoad();
+  }
+  else if (PAGE_URL.includes('outreach.html')) {
+    outreachOnLoad();
+  }
+}
 
 // runs on load of webpage
 window.addEventListener('load', function () {
   // set dropdown menu 
   let dropdownMenuButton = document.getElementById("DropdownMenuButton");
   dropdownMenuButton.addEventListener("click", toggleDropdownMenu);
-
-  // handles redirecting to other pages, and loading them - goes before anything on the page to optimize time
-  //get page name
-  let page_name = location.toString(); // https://stackoverflow.com/questions/16611497/how-can-i-get-the-name-of-an-html-page-in-javascript
-  if (page_name === web_url) {
-    window.location.href = "./index.html"; // force them into index.html for properly reading urlyou
-  }
-
-  else if (page_name.includes('index.html')) {
+  if (PAGE_URL.includes('index.html')) {
     indexOnLoad();
-  }
-  else if (page_name.includes('robots.html')) {
-    robotsOnLoad();
-  }
-  else if (page_name.includes('outreach.html')) {
-    outreachOnLoad();
   }
 }
 )
