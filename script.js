@@ -5,15 +5,14 @@ const web_url = 'https://beavertronics.github.io/5970/';
 // const web_url = 'http://127.0.0.1:5501/' // for testing purposes 
 
 
-pageLoader();
-
-
 
 // runs on load of webpage
 window.addEventListener('load', function () {
   // set dropdown menu 
   let dropdownMenuButton = document.getElementById("DropdownMenuButton");
   dropdownMenuButton.addEventListener("click", toggleDropdownMenu);
+
+  pageLoader();
 }
 )
 
