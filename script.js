@@ -4,7 +4,16 @@ const outreach_lower_width_limit = 975; // You know how I found this at this poi
 const web_url = 'https://beavertronics.github.io/5970/';
 // const web_url = 'http://127.0.0.1:5501/' // for testing purposes 
 const PAGE_URL = location.toString() // https://stackoverflow.com/questions/16611497/how-can-i-get-the-name-of-an-html-page-in-javascript
-
+/*(if ((PAGE_URL.includes('mobile pages'))) {
+  $(function() {
+    $("#header").load("../shared/header.html")
+    $("#DropdownMenu").load("../shared/dropdown-links.html")
+    $("#footer").load("../shared/footer.html")
+  })
+}
+else {
+  
+}*/
 $(function() {
   $("#header").load("./shared/header.html")
   $("#DropdownMenu").load("./shared/dropdown-links.html")
