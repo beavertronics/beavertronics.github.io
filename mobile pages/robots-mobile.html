@@ -8,57 +8,14 @@
     <link rel="icon" type="image/png" href="../assets/header/ravioli.png"/> <!-- Website icon at top of tab -->
     <link rel="stylesheet" href="../style.css"> <!-- linking CSS -->
     <link rel="stylesheet" href="./mobile.css"> <!-- linking mobile CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../script.js"></script>
     <title>Beavertronics</title>
 </head>
 
 
-<header>
-    <!-- Beavertronics logo in the top left of page -->
-    <!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fthesageapron.com%2Fthe-best-homemade-cheese-ravioli%2F&psig=AOvVaw0uUOWF8wFhFgHu6dD6tAKI&ust=1708327044029000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNCIzaastIQDFQAAAAAdAAAAABAE -->
-    <img id=logo src="../assets/header/ravioli.png" alt="Italian Trulli"> 
-    <div id=title> 
-        <a href="../index.html">
-            BEAVERTRONICS TEAM 5970
-        </a>
-    </div>
-
-    <!-- links -->
-    <div class="links"> 
-        <a href="../index.html"> 
-            <p>Home</p>  
-        </a>
-
-        <!-- <a href="resources.html"> 
-            <p>Resources</p>  
-        </a> -->
-
-        <a href="../robots.html"> 
-            <p>Robots</p>  
-        </a>
-
-        <a href="../outreach.html"> 
-            <p>Outreach</p>  
-        </a>
-
-        <a href="../DLC.html">
-            <p>DLC</p>
-        </a>
-
-        <!-- <a href="taco.html"> 
-            <p>Taco</p>  
-        </a> -->
-        
-        <!-- <a href="alastor.html"> 
-            <p>Alastor</p>  
-        </a> -->
-    </div>
-
-    <!-- dropdown menu button -->
-    <button class="hamburger-button" id="DropdownMenuButton">
-        <img src="../assets/header/hamburg/hamburgerMenuIcon.png" class="hamburger-menu-icon">
-    </button>
-</header>
+<header id = "header" class = "header"></header>
+<div class="dropdown-links hidden" id="DropdownMenu"></div>
 
 
 <!-- dropdown menu links -->
@@ -227,23 +184,5 @@
 </body>
 
 
-    <footer class="footer" style="margin-top: 2vw;">
-        <!-- images -->
-        <div class="icon-wrapper">
-            <a href="https://www.facebook.com/Beavertronics-Team-5970-453426894846186/?ref=hl" target=”_blank”><img class="footer-scale" src="../assets/footer/facebook.webp"></a>
-            <a href="https://twitter.com/Beav5970" target=”_blank”><img class="footer-scale" src="../assets/footer/twitter.webp"></a>
-            <a href="https://www.instagram.com/beavertonhigh.robotics/" target=”_blank”><img class="footer-scale" src="../assets/footer/instagram.webp"></a>
-            <a href="javascript:navigator.clipboard.writeText(&quot;heather_meiring@beaverton.k12.or.us&quot;);alert(&quot;Email copied!&quot;)" class="footer-scale"><img class="footer-scale" src="../assets/footer/email.png"></a>
-        </div>
-    
-        <!-- text -->
-        <!-- <p>Developed by Ansh P & Collin W - 2024</p> -->
-        <p>
-            <a href="./credits.html">credits</a>
-            ● 
-            <a href='https://forms.gle/vtFWX3jtFac88Gsa9' target="_blank">feedback</a>
-            ● 
-            <a href="https://beavertronics5970.wixsite.com/bhs-robotics" target="_blank">legacy website</a>
-        </p>
-    </footer>
+    <footer id = "footer" class="footer"> </footer>
 </html>
