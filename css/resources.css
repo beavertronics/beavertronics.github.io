@@ -1,0 +1,102 @@
+.resourceButton {
+    background-color: rgba(34,34,34, 0);
+    border-color:rgba(245, 112, 41, 1);
+    border-width: 2px;
+    color: rgba(245, 112, 41, 1);
+    width: 180px;
+    height: 50px;
+    font-family: Futura;
+    font-weight: 900;
+    font-size: larger;
+    margin-top: 10px;
+    position: absolute;
+
+}
+#button1 { margin-top: 0px;}
+#button2 { margin-top: 60px;}
+#button3 { margin-top: 120px;}
+#button4 { margin-top: 180px;}
+#button5 { margin-top: 240px;}
+#button6 { margin-top: 300px;}
+#button7 { margin-top: 360px;}
+#button8 { margin-top: 420px;}
+
+.resourceButtonContainer {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    height: 500px;
+    margin-left: 25vw;
+    font-family: monospace;
+}
+.resourceText{
+    margin-top: 40px;
+    width: 30vw;
+    right: 30vw;
+    position: absolute;
+    list-style-position:inside;
+
+    font-family: Futura;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+}
+footer {
+    position: relative; //changed to relative from fixed also works if position is not there
+}
+.hclass {
+    font-family: Futura;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+b {
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.link {
+    color: blue;
+}
+.contentR {
+    font-family: Futura;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+}
+@media (max-width: 1300px) {
+    .resourceText{
+        left: 50vw;
+    }
+  }
+@media (max-width: 800px) {
+    .resourceButtonContainer {
+        margin-left: 10px !important;
+    }
+    .resourceText{
+        left: 0px;
+        left: 220px;
+        width: 50vw;
+    }
+  }
+  @media (max-width: 600px) {
+    .resourceText{
+        width: 200px;
+    }
+  }
+#full{
+    display: flex;
+}
+
+.resourceButton:hover {
+    animation: fadeToGrey 0.2s ease-in-out;
+    background-color: rgba(34,34,34);
+  }
+  .resourceButton:active {}
+  
+  @keyframes fadeToGrey {
+    0% {
+      background-color: rgba(34,34,34, 0);
+    }
+    100% {
+        background-color: rgba(34,34,34);
+    }
+  }
+

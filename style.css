@@ -6,7 +6,7 @@ header {
   top: 0px;
   width: 100vw;
   height: clamp(60px, 10vw, 100px); /* keep between 60px and 100px */
-  background-color: rgba(255, 94, 0, 1);
+  background-color: rgba(245, 112, 41, 1);
   backdrop-filter: blur(10px);
   /* box-shadow: 0px, 20px, 20px, 0px, #ff0000; */
   /* box-shadow: 0 -20px 30px 15px rgba(0,0,0,0.5); */
@@ -16,7 +16,6 @@ header {
   justify-content: left;
   
 }
-
 
 /* body stuff */
 body {
@@ -398,6 +397,7 @@ a:hover{
   background-color: black;
   mask-image: url("./assets/header//hamburg/hamburgerMenuIcon.png");
   mask-size: cover;
+  z-index: 100;
 }
 
 .hamburger-button {
