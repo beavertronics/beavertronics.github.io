@@ -23,7 +23,6 @@
 
 .resourceButtonContainer {
     margin-top: 40px;
-    margin-bottom: 80px;
     height: 500px;
     margin-left: 25vw;
     font-family: monospace;
@@ -34,18 +33,43 @@
     right: 30vw;
     position: absolute;
     list-style-position:inside;
-
     font-family: Futura;
     font-weight: 600;
     color: rgb(60, 60, 60);
 }
+body {
+    display: flex;
+    flex-direction: column;
+    /*height: auto;*/
+    min-height:100%;
+    position:relative;
+  }
+  h2 {
+    font-size: xx-large;
+    font-weight: 100;
+  }
 footer {
-    position: relative; //changed to relative from fixed also works if position is not there
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Futura;
+    color: white;
 }
 .hclass {
     font-family: Futura;
     font-weight: 600;
     color: black;
+    text-align: center;
+}
+.notice {
+    font-family: Futura;
+    font-weight: 600;
+    color: rgba(245, 112, 41, 1);
     text-align: center;
 }
 b {
@@ -55,6 +79,13 @@ b {
 }
 .link {
     color: blue;
+    text-decoration: underline;
+}
+.resourceLink {
+    text-decoration: underline;
+    font-size: larger;
+    cursor: pointer;
+    color: rgb(60, 60, 60);
 }
 .contentR {
     font-family: Futura;
@@ -81,16 +112,13 @@ b {
         width: 200px;
     }
   }
-#full{
-    display: flex;
-}
 
 .resourceButton:hover {
     animation: fadeToGrey 0.2s ease-in-out;
     background-color: rgba(34,34,34);
   }
-  .resourceButton:active {}
-  
+
+
   @keyframes fadeToGrey {
     0% {
       background-color: rgba(34,34,34, 0);
@@ -99,4 +127,9 @@ b {
         background-color: rgba(34,34,34);
     }
   }
-
+.hide {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: red !important;
+}

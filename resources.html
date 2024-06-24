@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/resources.css"/> <!-- linking CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="JS/Resources.js"></script>
     <title>Beavertronics</title>
 </head>
 
@@ -29,9 +30,7 @@
         <div class = "resourceButtonDiv"> <button type="button" class = "resourceButton"> Leadership        </button> </div>
         <div class = "resourceButtonDiv"> <button type="button" class = "resourceButton"> Business          </button> </div>
     </div>-->
-    <div id = "full">
         <div class = "resourceButtonContainer" id = "buttonDiv1"> 
-            <button type="button" class = "resourceButton" id = "button1"> Joining the Team  </button>
             <button type="button" class = "resourceButton" id = "button2"> General Resources </button>
             <button type="button" class = "resourceButton" id = "button3"> Mechanical        </button>
             <button type="button" class = "resourceButton" id = "button4"> Electrical        </button>
@@ -42,18 +41,69 @@
             <button type="button" class = "resourceButton" id = "button7"> Leadership        </button> 
             <button type="button" class = "resourceButton" id = "button8"> Business          </button>
     </div>
-    <div class = "resourceText">
-        <h2 class = hclass> Joining the Team</h2>
-            <li><b>When</b>: We meet most <b>Tuesdays and Thursdays</b>, from <b>3:00pm to 5:00pm</b>. Sometimes our hours are longer, but we have many members who can't stay the entire time, and that's fine.</li>
-            <li><b>Where</b>: <b>13002 SW 2nd St, Beaverton OR 97005</b> (Beaverton High School). Our shop and meeting location is in the building across SW. Erickson Ave from the main BHS building. We recommend that you park in the parking lot by the tennis courts.</li>
-            <li><b>Cost</b>: <b>$0.00</b>. It costs ZERO dollars to be on Team Beavertronics. You come ready to learn, we'll provide the rest.</li>
-            <li><b>Registration</b>: If you would like, you can contact our lead coach, Dr. Heather Meiring, at <a class = "link" href="javascript:navigator.clipboard.writeText(&quot;heather_meiring@beaverton.k12.or.us&quot;);alert(&quot;Email copied!&quot;)">heather_meiring@beaverton.k12.or.us</a>. You can also just show up- we do not require registration for normal meetings.</li>
-            <li><b>Food</b>: We almost always have snacks!</li>
-        <h3 class = "hclass">What do I need to know in order to join?</h3>
-            <p>You don't need to know <em>anything</em> to join the team- We'll teach you everything you need to know! You don't even have to be good at Math!</p>
+    <div class = "resourceText" id="generalText">
+        <h2 class = "hclass"> General Resources</h2>
+            <p> Welcome to our resources page! We hope you find the information you are looking for. These presentations and projects are for the access and use of robotics students from all about the country and world. Our mission is to maximize the number of learners in our society -- and this is a way we can make that happen!</p>
+            <h3 class = "notice"> TEXT & ICONS BELOW ARE HYPERLINKED</h3>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_49484de147ae436aa9cdfe616bcf5be4.pdf" target="_blank">
+                INTRODUCTION TO FRC WORKSHOP</a></li>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_c1eeea25fe514373b150ab94bc7e138a.pdf" target="_blank">
+                EQUITABILITY & INCLUSION (2020)</a></li>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_0576c0902cf5493a9859c5fba6170e9f.pdf" target="_blank">
+                KICKOFF STRATEGY WORKSHOP (Fall 2019)</a></li>
     </div>
+    <div class = "resourceText hide" id="mechanicalText">
+        <h2 class = "hclass"> MECHANICAL RESOURCES</h2>
+            <p> Welcome to our resources page! We hope you find the information you are looking for. These presentations and projects are for the access and use of robotics students from all about the country and world. Our mission is to maximize the number of learners in our society -- and this is a way we can make that happen!</p>
+            <h3 class = "notice"> TEXT & ICONS BELOW ARE HYPERLINKED</h3>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_254bd1aaac254254a1a6373880fdfbbc.pdf" target="_blank">
+                BASIC MECHANISMS (2020)</a></li>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_ffc917de533d400f9fdf363fa7ddc1b7.pdf" target="_blank">
+                BASIC MECHANISMS (2019)</a></li>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_8e70f29a3ca4473b9cff34da597d8cd7.pdf" target="_blank">
+                BUMPER MANUFACTURING GUIDE</a></li>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_04d1022ed6684dc1b67205ee1b65ae51.pdf" target="_blank">
+                DRIVETRAINS WORKSHOP (2019)</a></li>
+    </div>
+    <div class = "resourceText hide" id="electricalText">
+        <h2 class = "hclass"> ELECTRICAL RESOURCES</h2>
+            <p> Welcome to our resources page! We hope you find the information you are looking for. These presentations and projects are for the access and use of robotics students from all about the country and world. Our mission is to maximize the number of learners in our society -- and this is a way we can make that happen!</p>
+            <h3 class = "notice"> TEXT & ICONS BELOW ARE HYPERLINKED</h3>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_ce030e7eb2f147bca5534d9dde961cd4.pdf" target="_blank">
+                INTRO TO FRC ELECTRICAL (2020)</a></li>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_ba72894565574d6e93f7e2b948692b7e.pdf" target="_blank">
+                FRC ELECTRICAL OVERVIEW (2019)</a></li>
+            <li ><a  class = "resourceLink" href="https://docs.google.com/document/d/1ORmaSSSb9W4efG1v5-LzABsETYP1B2MBS1o4Lb52fDI/edit" target="_blank">
+                ELECTRICAL ENCHIRIDION</a></li>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_bc347c4384ff4cafb1fb1ede818d53da.pdf" target="_blank">
+                ELECTRICAL SENSORS WORKSHOP (2020)</a></li>
+            <li ><a  class = "resourceLink" href="https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_d66102612cb242a698818b93af8012fb.pdf" target="_blank">
+                PNEUMATICS WORKSHOP (2019)</a></li>
+    </div>
+    <div class = "resourceText hide" id="softwareText">
+        <h2 class = "hclass"> SOFTWARE RESOURCES</h2>
+            <p> Welcome to our resources page! We hope you find the information you are looking for. These presentations and projects are for the access and use of robotics students from all about the country and world. Our mission is to maximize the number of learners in our society -- and this is a way we can make that happen!</p>
+            <h3 class = "notice"> TEXT & ICONS BELOW ARE HYPERLINKED</h3>
+    </div>
+    <div class = "resourceText hide" id="designText">
+        <h2 class = "hclass"> DESIGN RESOURCES</h2>
+            <p> Welcome to our resources page! We hope you find the information you are looking for. These presentations and projects are for the access and use of robotics students from all about the country and world. Our mission is to maximize the number of learners in our society -- and this is a way we can make that happen!</p>
+            <h3 class = "notice"> TEXT & ICONS BELOW ARE HYPERLINKED</h3>
+    </div>
+    <div class = "resourceText hide" id="leadershipText">
+        <h2 class = "hclass"> LEADERSHIP RESOURCES</h2>
+            <p> Welcome to our resources page! We hope you find the information you are looking for. These presentations and projects are for the access and use of robotics students from all about the country and world. Our mission is to maximize the number of learners in our society -- and this is a way we can make that happen!</p>
+            <h3 class = "notice"> TEXT & ICONS BELOW ARE HYPERLINKED</h3>
+    </div>
+    <div class = "resourceText hide" id="businessText">
+        <h2 class = "hclass"> BUSINESS RESOURCES</h2>
+            <p> Welcome to our resources page! We hope you find the information you are looking for. These presentations and projects are for the access and use of robotics students from all about the country and world. Our mission is to maximize the number of learners in our society -- and this is a way we can make that happen!</p>
+            <h3 class = "notice"> TEXT & ICONS BELOW ARE HYPERLINKED</h3>
+    </div>
+
+                
+            
     </div>
 </body>
-<footer id = "footer" class="footer"> </footer>
-
+<footer id = "footer"> </footer>
 </html>

@@ -453,7 +453,7 @@ html, body {
 }
 
 .hidden {
-  visibility: hidden;
+  visibility: hidden !important;
 }
 
 .visible {
