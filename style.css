@@ -427,7 +427,7 @@ a:hover{
   width: 100vw;
   display: flex;
   justify-content: right;
-  padding-right: 32px;
+  /* padding-right: 32px; */
 
 }
 .dropdown-links-background {
