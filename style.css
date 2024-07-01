@@ -469,6 +469,12 @@ html, body {
   visibility: visible;
 }
 
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 /* THE BELOW CODE IS STOLEN FROM COLLINS WEBSITE, THANKS COLLIN */
 @media (max-width: 850px) {
 
