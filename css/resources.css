@@ -1,0 +1,178 @@
+.resourceButton {
+    background-color: rgba(34,34,34, 0);
+    border-color:rgba(245, 112, 41, 1);
+    border-width: 2px;
+    color: rgba(245, 112, 41, 1);
+    width: 180px;
+    height: 50px;
+    font-family: Futura;
+    font-weight: 900;
+    font-size: larger;
+    margin-top: 10px;
+    position: absolute;
+
+}
+#button1 { margin-top: 0px;}
+#button2 { margin-top: 60px;}
+#button3 { margin-top: 120px;}
+#button4 { margin-top: 180px;}
+#button5 { margin-top: 240px;}
+#button6 { margin-top: 300px;}
+#button7 { margin-top: 360px;}
+#button8 { margin-top: 420px;}
+h1{
+    font-size: 5em;
+    font-family: Oswald, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: RGB(255,255,255);
+}
+.centered { /* https://www.w3schools.com/howto/howto_css_image_text.asp */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.resourceIcon{
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    object-position: center center;
+}
+.linkContainer{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10fr 64px 64px 64px;
+    column-gap: 5px;
+}
+.splash-screen {
+    /* moving image */
+    position:relative;
+    width: 100%;
+    /* moving image */
+    margin-top: calc(-1000px + 60em) !important;
+     object-fit: fill;
+  }
+  .splash-screen-cover {
+    /* moving image */
+    position:relative;
+    width: 100%;
+    /* moving image */
+     object-fit: fill;
+  }
+.resourceButtonContainer {
+    margin-top: -220px;
+    margin-bottom: 300px;
+    height: 500px;
+    margin-left: 25vw;
+    font-family: monospace;
+}
+.resourceContainterContainer{
+    height: auto;
+    margin-bottom: 200px;
+}
+.resourceText{
+    width: 40vw;
+    right: 20vw;
+    position: absolute;
+    list-style-position:inside;
+    font-family: Futura;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    /*height: auto;*/
+    min-height:100%;
+    position:relative;
+  }
+  h2 {
+    font-size: xx-large;
+    font-weight: 100;
+  }
+/*footer {
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Futura;
+    color: white;
+}*/
+.hclass {
+    font-family: Futura;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.notice {
+    font-family: Futura;
+    font-weight: 600;
+    color: rgba(245, 112, 41, 1);
+    text-align: center;
+}
+b {
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.link {
+    color: blue;
+    text-decoration: underline;
+}
+.resourceLink {
+    text-decoration: underline;
+    font-size: large;
+    cursor: pointer;
+    color: rgb(60, 60, 60);
+}
+.contentR {
+    font-family: Futura;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+}
+@media (max-width: 1300px) {
+    .resourceText{
+        left: 50vw;
+    }
+  }
+@media (max-width: 800px) {
+    .resourceButtonContainer {
+        margin-left: 10px !important;
+    }
+    .resourceText{
+        left: 0px;
+        left: 220px;
+        width: 50vw;
+    }
+  }
+  @media (max-width: 600px) {
+    .resourceText{
+        width: 200px;
+    }
+  }
+
+.resourceButton:hover {
+    animation: fadeToGrey 0.2s ease-in-out;
+    background-color: rgba(34,34,34);
+  }
+
+
+  @keyframes fadeToGrey {
+    0% {
+      background-color: rgba(34,34,34, 0);
+    }
+    100% {
+        background-color: rgba(34,34,34);
+    }
+  }
+.hide {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    color: red !important;
+    display: none;
+}
