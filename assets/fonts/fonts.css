@@ -1,0 +1,47 @@
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+    font-family: Futura;
+    src: url('./assets/fonts/Futura/futura\ light\ bt.ttf');
+    font-weight: light;
+    font-style: normal;
+  }
+  @font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+    font-family: Futura;
+    src: url('./assets/fonts/Futura/Futura\ Light\ Italic\ font.ttf');
+    font-weight: light;
+    font-style: italic;
+  }
+  @font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+    font-family: Futura;
+    src: url('./assets/fonts/Futura/futura\ medium\ bt.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+    font-family: Futura;
+    src: url('./assets/fonts/Futura/Futura\ Medium\ Italic\ font.ttf');
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+    font-family: Futura;
+    src: url('./assets/fonts/Futura/Futura\ Heavy\ font.ttf');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+    font-family: Futura;
+    src: url('./assets/fonts/Futura/Futura\ Heavy\ Italic\ font.ttf');
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+    font-family: Futura;
+    src: url('./assets/fonts/Futura/futur.ttf');
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+  @font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+    font-family: Oswald;
+    src: url('./assets/fonts/Oswald-VariableFont_wght.ttf') format("truetype")
+  }
