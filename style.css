@@ -1,3 +1,12 @@
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+  font-family: Futura;
+  src: url('./assets/fonts/FuturaLT-Light.woff')
+}
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+  font-family: Oswald;
+  src: url('./assets/fonts/Oswald-VariableFont_wght.ttf') format("truetype")
+}
+
 /* header stuff*/
 header {
   position: fixed;
@@ -6,7 +15,7 @@ header {
   top: 0px;
   width: 100vw;
   height: clamp(60px, 10vw, 100px); /* keep between 60px and 100px */
-  background-color: rgba(245, 112, 41, 1);
+  background-color: rgba(255, 94, 41, 1); /** Old: rgba(245, 112, 41, 1) */
   backdrop-filter: blur(10px);
   /* box-shadow: 0px, 20px, 20px, 0px, #ff0000; */
   /* box-shadow: 0 -20px 30px 15px rgba(0,0,0,0.5); */
@@ -219,6 +228,8 @@ a:hover{
   /* moving image */
   top: -25%;
   /* object-fit: fill; https://www.w3schools.com/css/css3_object-fit.asp */
+  
+  opacity: 0.74;
 }
 
 .splash-screen-wrapper {
@@ -227,6 +238,7 @@ a:hover{
   flex-direction: column;
   max-height: 575px;
   overflow: hidden;
+  background-color:black;
 }
 
 /* editing the footer at the bottom of the page */
@@ -377,10 +389,7 @@ a:hover{
   background-color: black;
 }
 
-@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Futura;
-  src: url('./assets/fonts/FuturaLT-Light.woff')
-}
+
 
 .hamburger-menu-icon {
   /* height: 40%;

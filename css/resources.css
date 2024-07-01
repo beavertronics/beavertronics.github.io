@@ -20,17 +20,59 @@
 #button6 { margin-top: 300px;}
 #button7 { margin-top: 360px;}
 #button8 { margin-top: 420px;}
-
+h1{
+    font-size: 5em;
+    font-family: Oswald, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: RGB(255,255,255);
+}
+.centered { /* https://www.w3schools.com/howto/howto_css_image_text.asp */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.resourceIcon{
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    object-position: center center;
+}
+.linkContainer{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10fr 64px 64px 64px;
+    column-gap: 5px;
+}
+.splash-screen {
+    /* moving image */
+    position:relative;
+    width: 100%;
+    /* moving image */
+    margin-top: calc(-1000px + 60em) !important;
+     object-fit: fill;
+  }
+  .splash-screen-cover {
+    /* moving image */
+    position:relative;
+    width: 100%;
+    /* moving image */
+     object-fit: fill;
+  }
 .resourceButtonContainer {
-    margin-top: 40px;
+    margin-top: -220px;
+    margin-bottom: 300px;
     height: 500px;
     margin-left: 25vw;
     font-family: monospace;
 }
+.resourceContainterContainer{
+    height: auto;
+    margin-bottom: 200px;
+}
 .resourceText{
-    margin-top: 40px;
-    width: 30vw;
-    right: 30vw;
+    width: 40vw;
+    right: 20vw;
     position: absolute;
     list-style-position:inside;
     font-family: Futura;
@@ -48,7 +90,7 @@ body {
     font-size: xx-large;
     font-weight: 100;
   }
-footer {
+/*footer {
     width: 100%;
     background-color: rgb(49, 49, 49);
     position: fixed;
@@ -59,7 +101,7 @@ footer {
     align-items: center;
     font-family: Futura;
     color: white;
-}
+}*/
 .hclass {
     font-family: Futura;
     font-weight: 600;
@@ -83,7 +125,7 @@ b {
 }
 .resourceLink {
     text-decoration: underline;
-    font-size: larger;
+    font-size: large;
     cursor: pointer;
     color: rgb(60, 60, 60);
 }
@@ -132,4 +174,5 @@ b {
     white-space: nowrap;
     overflow: hidden;
     color: red !important;
+    display: none;
 }
