@@ -1,11 +1,55 @@
 @font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Futura;
-  src: url('./assets/fonts/FuturaLT-Light.woff')
+  font-family: Futura-lt;
+  src: url('./assets/fonts/FuturaLT-Light.woff') format("woff");
 }
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+  font-family: Futura;
+  src: url('./assets/fonts/Futura/futura\ light\ bt.ttf') format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+  font-family: Futura;
+  src: url('./assets/fonts/Futura/Futura\ Light\ Italic\ font.ttf') format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+  font-family: Futura;
+  src: url('./assets/fonts/Futura/futura\ medium\ bt.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+  font-family: Futura;
+  src: url('./assets/fonts/Futura/Futura\ Medium\ Italic\ font.ttf') format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+  font-family: Futura;
+  src: url('./assets/fonts/Futura/Futura\ Heavy\ font.ttf') format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+  font-family: Futura;
+  src: url('./assets/fonts/Futura/Futura\ Heavy\ Italic\ font.ttf') format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+  font-family: Futura;
+  src: url('./assets/fonts/Futura/Futura\ Bold\ font.ttf') format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 @font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
   font-family: Oswald;
   src: url('./assets/fonts/Oswald-VariableFont_wght.ttf') format("truetype")
 }
+
 
 /* header stuff*/
 header {
@@ -14,8 +58,8 @@ header {
   /* position: fixed; */
   top: 0px;
   width: 100vw;
-  height: clamp(60px, 10vw, 100px); /* keep between 60px and 100px */
-  background-color: rgba(255, 94, 41, 1); /** Old: rgba(245, 112, 41, 1) */
+  height: clamp(60px, 5vw, 80px); /* keep between 60px and 100px */
+  background-color: rgba(245, 112, 41, 1); /** Old: rgba(255, 94, 41, 1) */
   backdrop-filter: blur(10px);
   /* box-shadow: 0px, 20px, 20px, 0px, #ff0000; */
   /* box-shadow: 0 -20px 30px 15px rgba(0,0,0,0.5); */
@@ -23,6 +67,7 @@ header {
   display: flex;
   align-content: center;
   justify-content: left;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08), 0 4px 8px 0 rgba(0, 0, 0, 0.18);
   
 }
 
@@ -30,7 +75,7 @@ header {
 body {
   position: relative;
   margin: 0px;
-  margin-top: clamp(60px, 10vw, 100px);
+  margin-top: clamp(60px, 5vw, 80px);
   left: 0px;
   width: 100%;
   height: 200%;
@@ -111,8 +156,8 @@ a:hover{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-family: Futura, 'Courier New', Courier, monospace;
-  font-weight: bolder;
+  font-family: Futura-lt, 'Courier New', Courier, monospace;
+  font-style: normal;
   color: white;
 }
 
@@ -120,6 +165,7 @@ a:hover{
 .text-content {
   margin-left: 50%;
   transform: translateX(-50%);
+  color: rgb(83,83,83);
   width: 50%;
   min-width: 350px;
   margin-top: 16px;
@@ -164,7 +210,6 @@ a:hover{
   text-justify: center;
   
 }
-
 
 /* text overlay */
 .info-card div{
@@ -250,7 +295,8 @@ a:hover{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  font-family: Futura;
+  font-family: Futura-lt;
+  font-weight: light;
   color: white;
 }
 
@@ -271,7 +317,9 @@ a:hover{
 .robot-title {
   font-weight: bolder;
   font-size: 2.5vw;
-  font-family: Futura, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Futura-lt, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: light;
+
 }
 
 .robot-images { 
@@ -304,8 +352,10 @@ a:hover{
   margin-left: 5%;
   margin-right: 5%;
   font-size: 125%;
-  font-family: Futura;
+  font-family: Futura-lt;
   text-align: center;
+  font-weight: light;
+
 }
 
 .robot-title-link {
@@ -334,8 +384,10 @@ a:hover{
   margin-right: 2.5%;
   align-items: center;
   font-weight: bolder;
-  font-family: Futura;
+  font-family: Futura-m;
   font-size: 1.25vw;
+  font-weight: light;
+
 }
 
 .outreach-info {
@@ -352,11 +404,13 @@ a:hover{
   position: relative;
   display: flex;
   font-size: 3vw;
-  font-family: Futura;
+  font-family: Futura-n;
   margin-left: 12.5%;
   margin-right: 12.5%;
   margin-bottom: 1%;
   padding-top: 2.5%;
+  font-weight: light;
+
   /* justify content left/right added in html */
 }
 /* ----------contents---------- */
@@ -368,7 +422,9 @@ a:hover{
   display: flex;
   flex-direction: row;
   padding-bottom: 2.5%;
-  font-family: Futura;
+  font-family: Futura-lt;
+  font-weight: light;
+
   /* text align left/right added in html */
 }
 
@@ -430,6 +486,7 @@ a:hover{
 
 .dropdown-links {
   font-family: Futura;
+  font-weight: 300;
   width: 50vw;
   z-index: 2;
   position: fixed;
@@ -455,6 +512,7 @@ a:hover{
   margin-right: 32px;
   text-align: right;
   font-family: Futura;
+  font-weight: light;
   /* margin-left: auto; */
 }
 html, body {
@@ -467,6 +525,12 @@ html, body {
 
 .visible {
   visibility: visible;
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 /* THE BELOW CODE IS STOLEN FROM COLLINS WEBSITE, THANKS COLLIN */

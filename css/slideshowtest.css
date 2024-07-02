@@ -1,0 +1,161 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-height: 575px;
+  overflow: hidden;
+  background-color:black;
+}
+
+/* Hide the images by default */
+.mySlides {
+  position: absolute;
+  width: 100%;
+  /* object-fit: fill; https://www.w3schools.com/css/css3_object-fit.asp */
+  display: none;
+  opacity: 0.74;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color:#bbb;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /*transition: background-color 0.6s ease;*/
+  z-index: 20;
+}
+
+.dotContainer {
+  position: relative;
+  text-align:center;
+  margin-top: 28%;
+  z-index: 20;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+:root{
+  --timingFunction: cubic-bezier(0.5,0.5, 0, 1);
+}
+/* Fading animation */
+.slideInLeft {
+    animation: slideInLeftAnim 1.5s linear;
+    animation-timing-function: var(--timingFunction);
+}
+.splashTextTop {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: RGB(255,255,255);
+
+}
+#splashTopText {
+  font-size: 2vw;
+  font-family: Futura, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: normal;
+  color: RGB(255,255,255);
+}
+.splashTextBottom { /* https://www.w3schools.com/howto/howto_css_image_text.asp */
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: RGB(255,255,255);
+
+}
+#splashBotText {
+  font-size: 5vw !important;
+  font-family: Futura, 'Times New Roman', Times, serif;
+  font-weight:bolder;
+  color: RGB(255,255,255);
+}
+
+@keyframes slideInLeftAnim {
+    0% {
+      margin-left: 100%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+/* Fading animation */
+.slideInRight {
+    animation: slideInRightAnim 1.5s linear;
+    animation-timing-function: var(--timingFunction);
+}
+
+@keyframes slideInRightAnim {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+      margin-left: 0%;
+  }
+}
+/* Fading animation */
+.slideOutRight {
+    animation: slideOutRightAnim 1.5s linear;
+    animation-timing-function: var(--timingFunction);
+  }
+  
+@keyframes slideOutRightAnim {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+      margin-left: -100%;
+  }
+  }
+
+/* Fading animation */
+.slideOutLeft {
+    animation: slideOutLeftAnim 1.5s linear;
+    animation-timing-function: var(--timingFunction);
+  }
+  
+  @keyframes slideOutLeftAnim {
+    0% {
+      margin-left: 0%;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
