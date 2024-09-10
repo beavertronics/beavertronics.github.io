@@ -1,8 +1,11 @@
-const calendar_lower_width_limit = 850; // I found this number by shrinking the page until the calendar seemed too dificult to read
-const robots_lower_width_limit = 1120; // I found this number by shrinking the page until the robot image was squished enough to look weird
-const outreach_lower_width_limit = 975; // You know how I found this at this point
+const CALENDAR_MINIMUM_WIDTH = 850; // I found this number by shrinking the page until the calendar seemed too dificult to read
+const ROBOTS_MINIMUM_WIDTH = 1120; // I found this number by shrinking the page until the robot image was squished enough to look weird
+const OUTREACH_MINIMUM_WIDTH = 975; // You know how I found this at this point
 const PAGE_URL = location.toString() // https://stackoverflow.com/questions/16611497/how-can-i-get-the-name-of-an-html-page-in-javascript
-const web_url = 'https://beavertronics.github.io/5970/';
+const WEB_URL = 'https://beavertronics.github.io/5970/';
+
+
+
 
 
 // injects footer, header, dropdown code (both mobile and normal pages)
@@ -23,60 +26,70 @@ else {
 
 
 
-////////// PAGE FORMATTING FUNCTIONS //////////
-// run loading functions for pages if they are not in index
-if ((PAGE_URL.includes('index.html')) === false) {
-  if (PAGE_URL === web_url) {
-    window.location.href = "./index.html"; // force them into index.html for properly reading url
-  }
-  if (PAGE_URL.includes('robots.html')) {
-    robotsOnLoad();
-  }
-  else if (PAGE_URL.includes('outreach.html')) {
-    outreachOnLoad();
-  }
+
+
+// when page is loading, force them into index.html to make things easier :3
+// this is for more consistent URLs and whatnot, which makes checking cases easier
+// instead of having to check for https://beavertronics.github.io/5970 AND
+// https://beavertronics.github.io/5970/index.html, its simplified into the latter
+if (!(PAGE_URL.includes('index.html'))) {
+  if (PAGE_URL == WEB_URL) { window.location.href = "./index.html" }
 }
 
 // runs on load of webpage
+// manages calling indexOnLoad(), robotsOnLoad(), and outreachOnLoad()
+// these manage manipulating certain things about the page
 window.addEventListener('load', function () {
-  if (PAGE_URL.includes('index.html')) {
-    indexOnLoad();
+  if (PAGE_URL.includes('index.html')) { indexOnLoad() } // run loading function for the index page
+  else {
+    if (PAGE_URL.includes('robots.html')) { robotsOnLoad() } // run loading function for the robots page
+    if (PAGE_URL.includes('outreach.html')) { outreachOnLoad() } // run the loading function for the outreach page
   }
 })  
 
-// formatting for index page
+
+
+
+
+// formatting for the index page
+// if the pages width is too small, then it removes the calendar
+// instead it displays some text 
 function indexOnLoad() {
-  let current_screen_width = window.innerWidth;
-  if (current_screen_width <= calendar_lower_width_limit) {
-    calendar = document.getElementById("google calendar");
-    // calendar.classList.toggle("hidden");
+  if (window.innerWidth <= CALENDAR_MINIMUM_WIDTH) {
+    calendar = document.getElementById("google calendar")
     calendar.remove();
-    alt_text = document.getElementById("alt calendar text");
+    alt_text = document.getElementById("alt calendar text")
     alt_text.classList.toggle("visible");
   }
 }
 
-// formatting for robots page
+// formatting for the robots page
+// if the pages width is too small, then it redirects you
+// instead onto the mobile page for robots
 function robotsOnLoad() {
   let current_screen_width = window.innerWidth; // https://www.w3schools.com/howto/howto_js_get_current_window.asp
-  if (current_screen_width <= robots_lower_width_limit) {
+  if (current_screen_width <= ROBOTS_MINIMUM_WIDTH) {
     window.location.href = "./mobile pages/robots-mobile.html";
   }
 }
 
-// formatting for outreach page
+// formatting for the outreach page
+// if the pages width is too small, then it redirects you
+// instead onto the mobile page for outreach
 function outreachOnLoad() {
   let current_screen_width = window.innerWidth;
-  if (current_screen_width <= outreach_lower_width_limit) {
+  if (current_screen_width <= OUTREACH_MINIMUM_WIDTH) {
     window.location.href = "./mobile pages/outreach-mobile.html";
   } 
 }
-////////// END PAGE FORMATTING FUNCTIONS //////////
 
 
 
-// runs on page open, fills the empty header, dropdown menu div, and footer with the contents of their respective html files
 
+
+// runs on page open, fills the empty header, 
+// dropdown menu div, and footer with the contents of their respective 
+// html files
 //https://www.nikitakazakov.com/js-wait-until-loaded-dom-element
 const isElementLoaded = async selector => {
   while ( document.querySelector(selector) === null) {
@@ -90,9 +103,9 @@ isElementLoaded('#DropdownMenuButton').then((selector) => {
   dropdownMenuButton.addEventListener("click", toggleDropdownMenu);
 });
 
-
-// toggles dropdown menu, is a listener-called function on the drop down menu hamburger button
+// toggles dropdown menu
+// when hamburger icon in top left is clicked,
+// this either shows or hides the dropdown menu
 function toggleDropdownMenu() {
-  let dropdownMenu = document.getElementById("DropdownMenu");
-    dropdownMenu.classList.toggle("hidden");
+  dropdocument.getElementById("DropdownMenu");downMenu.classList.toggle("hidden");
 }
