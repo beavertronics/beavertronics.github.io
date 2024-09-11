@@ -27,6 +27,7 @@ ALREADY FINISHED
 - cleaned up script.js
 - removing the jquery link from all html files
 - creating a file for noting down stuff (named notes.txt)
+- moving all text files (or note like things) into ignore/documentation/
 
 TODO
 - 
