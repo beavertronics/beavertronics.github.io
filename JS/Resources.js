@@ -1,3 +1,5 @@
+// a class for a resource page? I am not sure I didn't make this-
+// this is the javascript for injecting things for the resources page, though
 class resourcePage {
     constructor(title, text = "default", links = []) {
         this.title = title
