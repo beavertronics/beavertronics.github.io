@@ -25,6 +25,8 @@ ALREADY FINISHED
 - adding some features to DLC/school-construction.html
 - moving CSS for DLC.html into css/DLC/dlc.css
 - cleaned up script.js
+- removing the jquery link from all html files
+- creating a file for noting down stuff (named notes.txt)
 
 TODO
 - 
