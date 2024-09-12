@@ -1,3 +1,5 @@
+// a class for a resource page? I am not sure I didn't make this-
+// this is the javascript for injecting things for the resources page, though
 class resourcePage {
     constructor(title, text = "default", links = []) {
         this.title = title
@@ -37,12 +39,12 @@ class IconLink {
     getHtml() { return `<a href="${this.link}" target="_blank"> <img src = "${this.iconType}" class = "resourceIcon"></a>`}
 }
 const IconType = Object.freeze({
-    PRESENTATION: "assets/pages/resource/Presentation.webp",
-    DOCX: "assets/pages/resource/Docx.webp",
-    DOCS: "assets/pages/resource/Docs.png",
-    SLIDES: "assets/pages/resource/Slides.png",
-    VIDEO: "assets/pages/resource/Video3.png",
-    WEB: "assets/pages/resource/Web.webp",
+    PRESENTATION: "assets/pages/resources/Presentation.webp",
+    DOCX: "assets/pages/resources/Docx.webp",
+    DOCS: "assets/pages/resources/Docs.png",
+    SLIDES: "assets/pages/resources/Slides.png",
+    VIDEO: "assets/pages/resources/Video3.png",
+    WEB: "assets/pages/resources/Web.webp",
 });
 
 const generalText = new resourcePage(
