@@ -1,3 +1,6 @@
+// this is basically an image slidey thing?
+// i also did not make this but from what i understand,
+// it slides through images that are displayed
 let last = 0
 let slideIndex = 0;
 let overide = false;

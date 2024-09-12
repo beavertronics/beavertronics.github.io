@@ -9,3 +9,25 @@
 
 - Image gallery feature to image gallery page
     - https://www.w3schools.com/howto/howto_js_lightbox.asp
+
+
+
+
+
+CLEANUP
+------------
+clean up code
+ALREADY FINISHED
+- organizing and cleaning up JS/
+- organizing all CSS files into css/
+- organizing extra/
+- renaming resources.html to make things easier
+- adding some features to DLC/school-construction.html
+- moving CSS for DLC.html into css/DLC/dlc.css
+- cleaned up script.js
+- removing the jquery link from all html files
+- creating a file for noting down stuff (named notes.txt)
+- moving all text files (or note like things) into ignore/documentation/
+
+TODO
+- 
