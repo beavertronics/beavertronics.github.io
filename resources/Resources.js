@@ -35,17 +35,56 @@ class IconLink {
     constructor(iconType, link) {
         this.iconType = iconType
         this.link = link
-    }
+    }getHtml
     getHtml() { return `<a href="${this.link}" target="_blank"> <img src = "${this.iconType}" class = "resourceIcon"></a>`}
 }
 const IconType = Object.freeze({
-    PRESENTATION: "assets/pages/resources/Presentation.webp",
-    DOCX: "assets/pages/resources/Docx.webp",
-    DOCS: "assets/pages/resources/Docs.png",
-    SLIDES: "assets/pages/resources/Slides.png",
-    VIDEO: "assets/pages/resources/Video3.png",
-    WEB: "assets/pages/resources/Web.webp",
+    PRESENTATION: "../assets/pages/resources/Presentation.webp",
+    DOCX: "../assets/pages/resources/Docx.webp",
+    DOCS: "../assets/pages/resources/Docs.png",
+    SLIDES: "../assets/pages/resources/Slides.png",
+    VIDEO: "../assets/pages/resources/Video3.png",
+    WEB: "../assets/pages/resources/Web.webp",
 });
+
+textLookupDictionary = {
+    "general" : generalText,
+    "mechanical" : mechanicalText,
+    "electrical" : electricalText,
+    "software" : softwareText,
+    "design" : designText,
+    "leadership" : leadershipText,
+    "business" : businessText,
+}
+console.log(PAGE_URL)
+window.addEventListener('load', function () {
+    let resourceTextContainer = document.getElementById("resourceTextContainer")
+    pageType = PAGE_URL.split("#")
+    if(pageType[1] in textLookupDictionary){
+        resourceTextContainer.innerHTML = textLookupDictionary[pageType[1]]
+    } else {
+        showTextCreate("general", generalText)()
+    }
+    
+
+    //let lastShown = generalResourcesText
+
+    document.getElementById("button2").addEventListener("click", showTextCreate("general", generalText));
+    document.getElementById("button3").addEventListener("click", showTextCreate("mechanical", mechanicalText));
+    document.getElementById("button4").addEventListener("click", showTextCreate("electrical", electricalText));
+    document.getElementById("button5").addEventListener("click", showTextCreate("software", softwareText));
+    document.getElementById("button6").addEventListener("click", showTextCreate("design", designText));
+    document.getElementById("button7").addEventListener("click", showTextCreate("leadership", leadershipText));
+    document.getElementById("button8").addEventListener("click", showTextCreate("business", businessText));
+
+    function showTextCreate(name, textToShow){
+        return function() {
+            window.location.href = window.location.href.split("#")[0] + `#${name}`;
+            resourceTextContainer.innerHTML = textToShow
+        }
+    }
+})
+
 
 const generalText = new resourcePage(
     "GENERAL RESOURCES", "default", 
@@ -205,43 +244,6 @@ const businessText = new resourcePage(
                 new IconLink(IconType.SLIDES, "https://docs.google.com/presentation/d/15ZHMIcr5wwoEvilI2Sq-wtz_nylEJ5GTKsKZF4lC6U4/edit?usp=sharing"),
             ]),
     ]).getHtml()
-textLookupDictionary = {
-    "general" : generalText,
-    "mechanical" : mechanicalText,
-    "electrical" : electricalText,
-    "software" : softwareText,
-    "design" : designText,
-    "leadership" : leadershipText,
-    "business" : businessText,
-}
-console.log(PAGE_URL)
-window.addEventListener('load', function () {
-    let resourceTextContainer = document.getElementById("resourceTextContainer")
-    pageType = PAGE_URL.split("#")
-    if(pageType[1] in textLookupDictionary){
-        resourceTextContainer.innerHTML = textLookupDictionary[pageType[1]]
-    } else {
-        showTextCreate("general", generalText)()
-    }
-    
-
-    //let lastShown = generalResourcesText
-
-    document.getElementById("button2").addEventListener("click", showTextCreate("general", generalText));
-    document.getElementById("button3").addEventListener("click", showTextCreate("mechanical", mechanicalText));
-    document.getElementById("button4").addEventListener("click", showTextCreate("electrical", electricalText));
-    document.getElementById("button5").addEventListener("click", showTextCreate("software", softwareText));
-    document.getElementById("button6").addEventListener("click", showTextCreate("design", designText));
-    document.getElementById("button7").addEventListener("click", showTextCreate("leadership", leadershipText));
-    document.getElementById("button8").addEventListener("click", showTextCreate("business", businessText));
-
-    function showTextCreate(name, textToShow){
-        return function() {
-            window.location.href = window.location.href.split("#")[0] + `#${name}`;
-            resourceTextContainer.innerHTML = textToShow
-        }
-    }
-})
 
 /**
  * `<h2 class = "hclass"> General Resources</h2>

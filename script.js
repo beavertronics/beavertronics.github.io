@@ -32,9 +32,9 @@ else {
 // this is for more consistent URLs and whatnot, which makes checking cases easier
 // instead of having to check for https://beavertronics.github.io/5970 AND
 // https://beavertronics.github.io/5970/index.html, its simplified into the latter
-if (!(PAGE_URL.includes('index.html'))) {
-  if (PAGE_URL == WEB_URL) { window.location.href = "./index.html" }
-}
+// if (!(PAGE_URL.includes('index.html'))) {
+//   if (PAGE_URL == WEB_URL) { window.location.href = "./index.html" }
+// }
 
 // runs on load of webpage
 // manages calling indexOnLoad(), robotsOnLoad(), and outreachOnLoad()
