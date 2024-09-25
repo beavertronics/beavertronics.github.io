@@ -1,0 +1,13 @@
+_ignore: DONE
+assets: DONE
+credits: UPDATE
+DLC: DONE
+outreach: FIX MOBILE
+resources: FIX MOBILE
+robots: DONE
+shared: DONE
+.gitignore: DONE
+index.html: FIX CALENDAR REMOVAL ON SMALL SCREEN
+script.js: DONE
+
+OVERALL: fix dropdown menu

@@ -1,57 +1,4 @@
-@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Futura-lt;
-  src: url('./assets/fonts/FuturaLT-Light.woff') format("woff");
-}
-@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Futura;
-  src: url('./assets/fonts/Futura/futura\ light\ bt.ttf') format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Futura;
-  src: url('./assets/fonts/Futura/Futura\ Light\ Italic\ font.ttf') format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Futura;
-  src: url('./assets/fonts/Futura/futura\ medium\ bt.ttf') format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Futura;
-  src: url('./assets/fonts/Futura/Futura\ Medium\ Italic\ font.ttf') format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Futura;
-  src: url('./assets/fonts/Futura/Futura\ Heavy\ font.ttf') format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Futura;
-  src: url('./assets/fonts/Futura/Futura\ Heavy\ Italic\ font.ttf') format("truetype");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Futura;
-  src: url('./assets/fonts/Futura/Futura\ Bold\ font.ttf') format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
-  font-family: Oswald;
-  src: url('./assets/fonts/Oswald-VariableFont_wght.ttf') format("truetype")
-}
-
-
-/* header stuff*/
+  /* header stuff*/
 header {
   position: fixed;
   z-index: 1;
@@ -513,6 +460,8 @@ h1{
   font-family: Futura;
   font-weight: light;
   /* margin-left: auto; */
+  text-decoration: none;
+  color: white;
 }
 html, body {
   overflow-x: hidden;

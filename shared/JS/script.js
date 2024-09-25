@@ -7,9 +7,9 @@ const WEB_URL = 'https://beavertronics.github.io/5970/';
 
 // injects footer, header, dropdown code
 $(() => {
-  $("#DropdownMenu").load("/shared/dropdown-links.html")
-  $("#footer").load("/shared/footer.html")
-  $("#header").load("/shared/header.html")
+  $("#DropdownMenu").load("shared/dropdown-links.html")
+  $("#footer").load("shared/footer.html")
+  $("#header").load("shared/header.html")
 })
 
 // when page is loading, force them into index.html to make things easier :3
@@ -49,10 +49,8 @@ window.addEventListener('load', function () {
 // instead it displays some text 
 function indexOnLoad() {
   if (window.innerWidth <= CALENDAR_MINIMUM_WIDTH) {
-    calendar = document.getElementById("google calendar")
-    calendar.remove();
-    alt_text = document.getElementById("alt calendar text")
-    alt_text.classList.toggle("visible");
+    document.getElementById("google calendar").remove()
+    document.getElementById("alt calendar text").classList.toggle("visible");
   }
 }
 

@@ -5,11 +5,11 @@
 }
 
 /* for all links */
-a{
+/* a{
     color: blue !important; 
     text-decoration: none;
     transition: color 0.2s;
-}
+} */
 
 /* for the div of contributors
 just shifts to the right a little? */
