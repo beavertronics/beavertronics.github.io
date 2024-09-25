@@ -5,28 +5,12 @@ const PAGE_URL = location.toString() // https://stackoverflow.com/questions/1661
 const WEB_URL = 'https://beavertronics.github.io/5970/';
 
 
-
-
-
-// injects footer, header, dropdown code (both mobile and normal pages)
-if ((PAGE_URL.includes('mobile%20pages'))) {
-  $(function() {
-    $("#header").load("../shared/header_mobile.html")
-    $("#DropdownMenu").load("../shared/dropdown-links_mobile.html")
-    $("#footer").load("../shared/footer_mobile.html")
-  })
-}
-else {
-  $(function() {
-    $("#header").load("./shared/header.html")
-    $("#DropdownMenu").load("./shared/dropdown-links.html")
-    $("#footer").load("./shared/footer.html")
-  })
-}
-
-
-
-
+// injects footer, header, dropdown code
+$(() => {
+  $("#DropdownMenu").load("/shared/dropdown.html")
+  $("#footer").load("/shared/footer.html")
+  $("#header").load("/shared/header.html")
+})
 
 // when page is loading, force them into index.html to make things easier :3
 // this is for more consistent URLs and whatnot, which makes checking cases easier
@@ -35,6 +19,15 @@ else {
 // if (!(PAGE_URL.includes('index.html'))) {
 //   if (PAGE_URL == WEB_URL) { window.location.href = "./index.html" }
 // }
+if (PAGE_URL.slice(-1) == "/" && !PAGE_URL.includes('resources')) {
+  console.log(window.history)
+  window.history.replaceState('page2', 'Title', PAGE_URL.substring(0, PAGE_URL.length - 1))
+  
+  //window.location.href = PAGE_URL.substring(0, PAGE_URL.length - 1);
+  //window.location.href = PAGE_URL.substring(0, PAGE_URL.length - 1);
+  //console.log(PAGE_URL.substring(0, PAGE_URL.length - 1))
+  //window.location.href = PAGE_URL
+}
 
 // runs on load of webpage
 // manages calling indexOnLoad(), robotsOnLoad(), and outreachOnLoad()
@@ -76,12 +69,12 @@ function robotsOnLoad() {
 // formatting for the outreach page
 // if the pages width is too small, then it redirects you
 // instead onto the mobile page for outreach
-function outreachOnLoad() {
-  let current_screen_width = window.innerWidth;
-  if (current_screen_width <= OUTREACH_MINIMUM_WIDTH) {
-    window.location.href = "./mobile pages/outreach-mobile.html";
-  } 
-}
+// function outreachOnLoad() {
+//   let current_screen_width = window.innerWidth;
+//   if (current_screen_width <= OUTREACH_MINIMUM_WIDTH) {
+//     window.location.href = "./mobile pages/outreach-mobile.html";
+//   } 
+// }
 
 
 
