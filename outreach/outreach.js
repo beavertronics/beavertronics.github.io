@@ -43,9 +43,9 @@ function on_resize(){
   let current_screen_width = window.innerWidth;
   console.log(currentBody)
   if (current_screen_width <= OUTREACH_MINIMUM_WIDTH) {
-    if(currentBody != "mobile") { $("#body").empty(); $("#body").load("/outreach/body/body_mobile.html"); currentBody = "mobile"; console.log("mobile") }
+    if(currentBody != "mobile") { $("#body").empty(); $("#body").load("/outreach/body/mobile.html"); currentBody = "mobile"; console.log("mobile") }
   } else {
-    if(currentBody != "desktop") { $("#body").empty(); $("#body").load("/outreach/body/body_desktop.html"); currentBody = "desktop"; console.log("desktop") }
+    if(currentBody != "desktop") { $("#body").empty(); $("#body").load("/outreach/body/desktop.html"); currentBody = "desktop"; console.log("desktop") }
   }
 }
 window.addEventListener('load', function () {
