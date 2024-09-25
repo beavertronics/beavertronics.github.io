@@ -79,8 +79,7 @@ function robotsOnLoad() {
 
 
 // runs on page open, fills the empty header, 
-// dropdown menu div, and footer with the contents of their respective 
-// html files
+// dropdown menu div, and footer with the contents of their respective html files
 //https://www.nikitakazakov.com/js-wait-until-loaded-dom-element
 const isElementLoaded = async selector => {
   while ( document.querySelector(selector) === null) {

@@ -3,10 +3,9 @@ assets: DONE
 credits: UPDATE
 DLC: DONE
 outreach: FIX MOBILE
-resources: FIX MOBILE
+resources: FIX MOBILE AND FIX HEADER
 robots: DONE
 shared: DONE
-.gitignore: DONE
 index.html: FIX CALENDAR REMOVAL ON SMALL SCREEN
 script.js: DONE
 
