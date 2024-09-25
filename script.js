@@ -7,7 +7,7 @@ const WEB_URL = 'https://beavertronics.github.io/5970/';
 
 // injects footer, header, dropdown code
 $(() => {
-  $("#DropdownMenu").load("/shared/dropdown.html")
+  $("#DropdownMenu").load("/shared/dropdown-links.html")
   $("#footer").load("/shared/footer.html")
   $("#header").load("/shared/header.html")
 })
@@ -100,5 +100,6 @@ isElementLoaded('#DropdownMenuButton').then((selector) => {
 // when hamburger icon in top left is clicked,
 // this either shows or hides the dropdown menu
 function toggleDropdownMenu() {
-  dropdocument.getElementById("DropdownMenu");downMenu.classList.toggle("hidden");
+  downMenu = document.getElementById("DropdownMenu");
+  downMenu.classList.toggle("hidden");
 }
