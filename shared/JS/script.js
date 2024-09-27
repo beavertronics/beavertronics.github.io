@@ -5,11 +5,17 @@ const PAGE_URL = location.toString() // https://stackoverflow.com/questions/1661
 const WEB_URL = 'https://beavertronics.github.io/5970/';
 
 
-// injects footer, header, dropdown code
+// this access the things on the current file
+// the #(x) is accessing that elements ID
+// then it loads the content with the following path in the load function
+// so load('/shared/dropdown-links.html') is loading the dropdown links
+// from the html file in the shared folder
+// it is then injected into the current file as the header
+// this works in any file because this is accessing from the root directory
 $(() => {
-  $("#DropdownMenu").load("shared/dropdown-links.html")
-  $("#footer").load("shared/footer.html")
-  $("#header").load("shared/header.html")
+  $("#DropdownMenu").load("/shared/dropdown-links.html")
+  $("#footer").load("/shared/footer.html")
+  $("#header").load("/shared/header.html")
 })
 
 // when page is loading, force them into index.html to make things easier :3
@@ -33,7 +39,7 @@ if (PAGE_URL.slice(-1) == "/" && !PAGE_URL.includes('resources')) {
 // manages calling indexOnLoad(), robotsOnLoad(), and outreachOnLoad()
 // these manage manipulating certain things about the page
 window.addEventListener('load', function () {
-  if (PAGE_URL.includes('index.html')) { indexOnLoad() } // run loading function for the index page
+  if (PAGE_URL == WEB_URL) { indexOnLoad() } // run loading function for the index page
   else {
     if (PAGE_URL.includes('robots.html')) { robotsOnLoad() } // run loading function for the robots page
     if (PAGE_URL.includes('outreach.html')) { outreachOnLoad() } // run the loading function for the outreach page
