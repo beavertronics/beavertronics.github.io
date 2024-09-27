@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <!-- <script src="code.jquery.com/jquery-1.10.2.js"></script>  -->
 </head>
     <meta charset="UTF-8">
@@ -14,46 +14,46 @@
     <link rel="stylesheet" href="/shared/css/style.css"/>
     <link rel="stylesheet" href="/shared/css/slideshow.css"/>
     <title>Beavertronics</title>
-    
-    
 </head>
-<!-- <iframe src="header.html" frameborder="0" scrolling="no" class = "header"></iframe> -->
+
+
+<!-- header for injecting the universal header -->
 <header id = "header" class = "header"></header>
 <div class="dropdown-links hidden" id="DropdownMenu"></div>
 
+
+<!-- main body -->
 <body>
-    
+
+    <!-- divider containing the image slideshow at the top of the page -->
     <div class="slideshow-container prevent-select">
 
-        <!-- Full-width images with number and caption text -->
+        <!-- images for the image slideshow, each in their own div (why is the CSS in each of these individually?) -->
         <div class="mySlides">
             <img src="assets/main/1-edit-splash-screen.jpg" style="width:100%; margin-top: -20%;">
         </div>
-  
         <div class="mySlides">
             <img src="assets/main/2-edit-splashscreen.jpg" style="width:100%; margin-top: -1%;">
         </div>
-  
         <div class="mySlides">
             <img src="assets/main/3-splashscreen.png" style="width:100%; margin-top: -2%">
         </div>
 
+         <!-- containing the text over the image slideshow -->
         <div class = "splashTextTop" id = "top1"> <h2 id = "splashTopText"> We Are </h1> </div>
             <div class = "splashTextBottom" id = bot1> <h1 id = "splashBotText"> BEAVERTRONICS </h1> </div>
             <div class = "splashTextTop hide" id = "top2"> <h2 id = "splashTopText"> We Are </h1> </div>
             <div class = "splashTextBottom hide" id = bot2> <h1 id = "splashBotText"> BEAVERTRONICS </h1> </div>
         
-  
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="prevSlides()">&#10094;</a>
-        <a class="next" onclick="nextSlide()">&#10095;</a>
-        <div class = "dotContainer">
-            <span class="dot" onclick="currentSlide(0)"></span>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-        </div>  
-      
-  </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="prevSlides()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+            <div class = "dotContainer">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>   
+        </div>
     <!-- splash screen at top of page 
     <div class="splash-screen-wrapper">
         <img class="splash-screen" src="./assets/main/2-edit-splashscreen.jpg" alt="Team picture">
@@ -67,7 +67,7 @@
         We compete in the FIRST Robotics Competition to learn lessons in perseverance, teamwork, and a plethora of technical skills. Our team, <b>which is 100% student led</b>, spends 6 short weeks every year working almost around the clock to design and build a competitive robot. Beyond this, we participate in a variety of community outreach events to engage those around us in STEM fields because we know the importance of getting young people excited and interested.
     </p>
 
-    <!-- info cards -->
+    <!-- all of the info cards -->
     <div id="info-card-holder" class="info-card-holder" style="--gap-amount: 2%">
         <div class="info-card">
             <div class="info-card-overlay"> 
@@ -77,7 +77,6 @@
             </div>
             <img src="https://static.wixstatic.com/media/cbe77e_13e422cfa1ec47e092ded8cf8fd5691f~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_13e422cfa1ec47e092ded8cf8fd5691f~mv2.jpg" class="img">
         </div>
-
         <div class="info-card">
             <div class="info-card-overlay">
                 <b>BUILD</b>
@@ -85,7 +84,6 @@
                 Team members fabricate parts using our band saw, miter saw, drill presses, CNC router, and 3D printer. We also assemble parts using a variety of fasteners.</div>
             <img src="https://static.wixstatic.com/media/cbe77e_bad328631b8a45efa236b1265a13b569~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_bad328631b8a45efa236b1265a13b569~mv2.jpg" class="img">
         </div>
-
         <div class="info-card">
             <div class="info-card-overlay">
                 <b>CONTROL SYSTEMS</b> 
@@ -93,7 +91,6 @@
                 Students and mentors partner to teach incoming members to wire electrical boards and program in Kotlin. The electrical and programming subteams work in tandem with the goal of a smoothly functioning control system.</div>
             <img src="https://static.wixstatic.com/media/cbe77e_8110a7825dfc4a1f82d60bdcb8a40177~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_8110a7825dfc4a1f82d60bdcb8a40177~mv2.jpg" class="img">
         </div>
-
         <div class="info-card">
             <div class="info-card-overlay">
                 <b>DESIGN</b>
@@ -101,7 +98,6 @@
                 Our team strategically designs each robot with feasability, simplicity, and awesomeness all in mind, based on a thorough analysis of each year's game. We experiment with ideas by making prototypes out of scrap wood. Once we have a good idea of what we want the robot to do and how we want it to do it, we flesh out the details using Onshape, a cloud-based CAD software. Finally, the CAD is thoroughly reviewed, both by students and by our experienced mentors, before manufacturing and assembly take place.</div>
             <img src="https://static.wixstatic.com/media/cbe77e_85f3406992e241ef9988ef2bc1cbbeb2~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_85f3406992e241ef9988ef2bc1cbbeb2~mv2.jpg" class="img">
         </div>
-
         <div class="info-card">
             <div class="info-card-overlay">
                 <b>MARKETING</b>
@@ -109,7 +105,6 @@
                 Students learn first-hand how to create consistent branding, talk to sponsors, write grants, and empower a team. Our marketing team spreads word of our program throughout the community of FIRST and beyond.</div>
             <img src="https://static.wixstatic.com/media/cbe77e_8e783eac4ef54a13b61999a50ed63382~mv2.jpg/v1/fill/w_284,h_420,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_8e783eac4ef54a13b61999a50ed63382~mv2.jpg" class="img">
         </div>
-
         <div class="info-card">
             <div class="info-card-overlay">
                 <b>COMMUNITY DEVELOPMENT</b>
@@ -120,13 +115,12 @@
     </div>
 
     <!-- link calendar on text, and display below -->
-    <!-- <img src="./assets/main/riggatoni.webp" class="body-img"> --> <!-- important -->
     <h1><a style="color: black; text-decoration: underline;" target="_blank" href="https://calendar.google.com/calendar/u/0/r?cid=beavertronics5970@gmail.com">Calendar</a></h1>
-    <!-- <iframe src="https://calendar.google.com/calendar/embed?src=beavertronics5970%40gmail.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" class="calendar"></iframe> -->
     <iframe class="calendar" style="width: 40vw; height: 30vw;" scrolling="no" id="google calendar" src="https://calendar.google.com/calendar/embed?src=beavertronics5970%40gmail.com&ctz=America%2FLos_Angeles"></iframe>
     <p id="alt calendar text" style="text-align: center;" class="hidden">Sorry, the screen is too small for the calendar to be displayed. Please click the "Calendar" text above, or click <a style="color: blue;" target="_blank" href="https://calendar.google.com/calendar/u/0/r?cid=beavertronics5970@gmail.com">here</a> to open the calendar in a different page!</p>
 </body>
 
-<footer id = "footer" class="footer"> </footer>
 
+<!-- footer for injecting the universal footer -->
+<footer id = "footer" class="footer"> </footer>
 </html>
