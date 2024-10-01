@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- <script src="code.jquery.com/jquery-1.10.2.js"></script>  -->
+<!--
+things that link to different files
+such as CSS or Javascript
+The page title (that you see on the top of the tab) and the image displayed
+is also assigned here.
+ -->
 <head>
     <meta charset="UTF-8">
     <meta Content-Type="text/css">
@@ -15,11 +20,26 @@
     <title>Beavertronics</title>
 </head>
 
+<!-- 
+there is javascript (in /shared/JS/script.js) that injects a header
+that is used on every page. this header includes:
+- the dropdown menu,
+- links to pages on top bar
+- beavertronics icon 
+- beavertronics title
+-->
 <header id = "header" class = "header"></header>
 <div id="DropdownMenu" class="dropdown-links hidden"></div>
 
-
+<!-- 
+this is the main body that contains everything 
+-->
 <body>
+    <!-- 
+    the links below all link to DLC pages
+    ...
+    there is currently only one
+    -->
     <h1>
         <a class="link_cointainer" href="/DLC/school-construction.html">school construction</a>
     </h1>
@@ -32,6 +52,14 @@
     <h1>TBD</h1>
 </body>
 
+<!-- 
+similar to above with the header, there is Javascript that injects a universal footer
+this footer includes:
+- links to socials
+- link to Dr. Meirings email
+- access to credits page
+- access to feedback page
+- access to old website
+-->
 <footer id = "footer" class="footer"> </footer>
-
 </html>

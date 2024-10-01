@@ -8,3 +8,5 @@ STEP 1: REFACTORING (only HTML)
 - resources page: DONE
 - outreach page (desktop): DONE
 - outreach page (mobile): DONE
+- DLC (main): DONE
+- DLC (School Construction): DONE

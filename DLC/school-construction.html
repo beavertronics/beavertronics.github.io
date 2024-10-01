@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- <script src="code.jquery.com/jquery-1.10.2.js"></script>  -->
+<!--
+things that link to different files
+such as CSS or Javascript
+The page title (that you see on the top of the tab) and the image displayed
+is also assigned here.
+ -->
 </head>
     <meta charset="UTF-8">
     <meta Content-Type="text/css">
@@ -15,6 +20,14 @@
     <title>Beavertronics</title>
 </head>
 
+<!-- 
+there is javascript (in /shared/JS/script.js) that injects a header
+that is used on every page. this header includes:
+- the dropdown menu,
+- links to pages on top bar
+- beavertronics icon 
+- beavertronics title
+-->
 <header>
     <h1 class="header-text">
         <a class="header-link" href="../DLC/">
@@ -23,12 +36,19 @@
     </h1>
 </header>
 
+<!-- 
+this is the main body that contains everything 
+-->
 <body> 
     <iframe allowfullscreen=True
         src="https://dwpwebcams.com/bhs/canvasvideo1.php">
     </iframe>
 </body>
 
-<!-- just for spacing -->
+<!-- 
+this footer, unlike the other ones,
+is just for spacing and nothing more
+:D 
+-->
 <footer></footer>
 </html>
