@@ -29,7 +29,6 @@ function on_resize() {
       $("#body").empty()
       $("#body").load("/robots/body/desktop.html")
       currentBody = "desktop"
-      console.log("sigma") 
     }
   }
 }
