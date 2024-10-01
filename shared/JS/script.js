@@ -27,9 +27,9 @@ window.addEventListener('load', function () {
   // the dollar sign is used to select elements
   // so in the case of below, we are selecting the dropdown menu, footer, and header by their ids
   // then loading the HTML from the files that are inputted into the .load() function
-  $("#DropdownMenu").load("/shared/dropdown-links.html")
-  $("#footer").load("/shared/footer.html")
-  $("#header").load("/shared/header.html")
+  $("#DropdownMenu").load("shared/dropdown-links.html")
+  $("#footer").load("shared/footer.html")
+  $("#header").load("shared/header.html")
 
   // once the dropdown menu is loaded, we add an event listener that toggles the dropdown menu
   // being visible whenever the icon is clicked
