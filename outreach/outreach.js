@@ -18,7 +18,6 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  console.log(slides)
   if(slides.length == 0) return
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
@@ -67,7 +66,6 @@ function on_resize() {
       $("#body").empty()
       $("#body").load("/outreach/body/desktop.html")
       currentBody = "desktop"
-      console.log("desktop")
     }
   }
 }

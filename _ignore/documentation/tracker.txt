@@ -17,3 +17,4 @@ STEP 2: REFACTORING (only JS)
 - shared/JS/slideshow.js: NEEDS COMMENTS
 - robots.js: DONE
 - outreach.js: DONE
+- DLC/JS/fullscreen.js: DONE
