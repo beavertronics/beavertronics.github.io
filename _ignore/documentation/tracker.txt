@@ -10,3 +10,10 @@ STEP 1: REFACTORING (only HTML)
 - outreach page (mobile): DONE
 - DLC (main): DONE
 - DLC (School Construction): DONE
+
+STEP 2: REFACTORING (only JS)
+- index.js: DONE
+- shared/JS/script.js: NEEDS COMMENTS
+- shared/JS/slideshow.js: NEEDS COMMENTS
+- robots.js: DONE
+- outreach.js: DONE

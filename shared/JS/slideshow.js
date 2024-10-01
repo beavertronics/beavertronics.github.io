@@ -15,7 +15,7 @@ function currentSlide(n) {
 canChange = true
 function auto() {
     setTimeout(function(){
-        console.log("Bonana")
+        // console.log("Bonana")
         if(!overide) nextSlide()
         else overide = false
         auto()
