@@ -1,7 +1,7 @@
 the general journey
 file by file
 
-STEP 1: REFACTORING (only HTML)
+STEP 1: DOCUMENTING (only HTML)
 - main page: DONE
 - robots page (desktop): DONE
 - robots page (mobile): DONE
@@ -11,7 +11,7 @@ STEP 1: REFACTORING (only HTML)
 - DLC (main): DONE
 - DLC (School Construction): DONE
 
-STEP 2: REFACTORING (only JS)
+STEP 2: DOCUMENTING (only JS)
 - index.js: DONE
 - shared/JS/script.js: NEEDS COMMENTS
 - shared/JS/slideshow.js: NEEDS COMMENTS
