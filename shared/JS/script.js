@@ -43,6 +43,6 @@ window.addEventListener('load', function () {
   // if it tries to remove the last character, that can break it
   // there is seperate logic in resources.js that handles that, for this reason
   if (PAGE_URL.slice(-1) == "/" && !PAGE_URL.includes('resources')) {
-    window.history.replaceState('page2', 'Title', PAGE_URL.substring(0, PAGE_URL.length - 1))
+    // window.history.replaceState('page2', 'Title', PAGE_URL.substring(0, PAGE_URL.length - 1))
   }
 })
