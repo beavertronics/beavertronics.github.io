@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<!-- <script src="code.jquery.com/jquery-1.10.2.js"></script>  -->
+
+<!--
+things that link to different files
+such as CSS or Javascript
+The page title (that you see on the top of the tab) and the image displayed
+is also assigned here.
+ -->
 </head>
     <meta charset="UTF-8">
     <meta Content-Type="text/css">
@@ -16,19 +21,32 @@
     <title>Beavertronics</title>
 </head>
 
-
-<!-- header for injecting the universal header -->
+<!-- 
+there is javascript (in /shared/JS/script.js) that injects a header
+that is used on every page. this header includes:
+- the dropdown menu,
+- links to pages on top bar
+- beavertronics icon 
+- beavertronics title
+-->
 <header id = "header" class = "header"></header>
 <div class="dropdown-links hidden" id="DropdownMenu"></div>
 
-
-<!-- main body -->
+<!-- 
+this is the main body that contains everything 
+-->
 <body>
 
-    <!-- divider containing the image slideshow at the top of the page -->
+    <!-- 
+    this contains the image slideshow at the top of the screen
+    which slides between different images
+    -->
     <div class="slideshow-container prevent-select">
 
-        <!-- images for the image slideshow, each in their own div (why is the CSS in each of these individually?) -->
+        <!-- 
+        these are all of the images that are displayed on the image slideshow
+        they are positioned individually and moved via the Javascript in /shared/JS/slideshow.js
+         -->
         <div class="mySlides">
             <img src="assets/main/1-edit-splash-screen.jpg" style="width:100%; margin-top: -20%;">
         </div>
@@ -39,13 +57,21 @@
             <img src="assets/main/3-splashscreen.png" style="width:100%; margin-top: -2%">
         </div>
 
-         <!-- containing the text over the image slideshow -->
+        <!-- 
+        this is the text that goes above the image that says 
+        "We Are BEAVERTRONICS"
+        As of documenting this (9/30/24) I am not sure why there are two versions of this 
+        but they are there
+         -->
         <div class = "splashTextTop" id = "top1"> <h2 id = "splashTopText"> We Are </h1> </div>
             <div class = "splashTextBottom" id = bot1> <h1 id = "splashBotText"> BEAVERTRONICS </h1> </div>
             <div class = "splashTextTop hide" id = "top2"> <h2 id = "splashTopText"> We Are </h1> </div>
             <div class = "splashTextBottom hide" id = bot2> <h1 id = "splashBotText"> BEAVERTRONICS </h1> </div>
         
-            <!-- Next and previous buttons -->
+            <!-- 
+            these are buttons that move the thing left and right
+            however I believe it slides automatically by itself
+            -->
             <a class="prev" onclick="prevSlides()">&#10094;</a>
             <a class="next" onclick="nextSlide()">&#10095;</a>
             <div class = "dotContainer">
@@ -54,12 +80,15 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
             </div>   
         </div>
+
     <!-- splash screen at top of page 
     <div class="splash-screen-wrapper">
         <img class="splash-screen" src="./assets/main/2-edit-splashscreen.jpg" alt="Team picture">
     </div>-->
 
-    <!-- info about our team -->
+    <!-- 
+    Below is a bunch of information regarding our team including a brief summary
+    -->
     <h1>
         ABOUT OUR TEAM
     </h1>
@@ -67,7 +96,9 @@
         We compete in the FIRST Robotics Competition to learn lessons in perseverance, teamwork, and a plethora of technical skills. Our team, <b>which is 100% student led</b>, spends 6 short weeks every year working almost around the clock to design and build a competitive robot. Beyond this, we participate in a variety of community outreach events to engage those around us in STEM fields because we know the importance of getting young people excited and interested.
     </p>
 
-    <!-- all of the info cards -->
+    <!-- 
+    below are the 6 info cards which scale (via CSS) depending on the size of the screen
+    -->
     <div id="info-card-holder" class="info-card-holder" style="--gap-amount: 2%">
         <div class="info-card">
             <div class="info-card-overlay"> 
@@ -114,13 +145,25 @@
         </div>
     </div>
 
-    <!-- link calendar on text, and display below -->
+    <!-- 
+    this is the link to the calendar that is on the bottom
+    there is also Javascript that should, in theory delete the iframe if the screen is too small
+    and instead display the text entry below it that links them externally to the calendar
+    however that code does not seem to be working so...
+    -->
     <h1><a style="color: black; text-decoration: underline;" target="_blank" href="https://calendar.google.com/calendar/u/0/r?cid=beavertronics5970@gmail.com">Calendar</a></h1>
     <iframe class="calendar" style="width: 40vw; height: 30vw;" scrolling="no" id="google calendar" src="https://calendar.google.com/calendar/embed?src=beavertronics5970%40gmail.com&ctz=America%2FLos_Angeles"></iframe>
     <p id="alt calendar text" style="text-align: center;" class="hidden">Sorry, the screen is too small for the calendar to be displayed. Please click the "Calendar" text above, or click <a style="color: blue;" target="_blank" href="https://calendar.google.com/calendar/u/0/r?cid=beavertronics5970@gmail.com">here</a> to open the calendar in a different page!</p>
 </body>
 
-
-<!-- footer for injecting the universal footer -->
+<!-- 
+similar to above with the header, there is Javascript that injects a universal footer
+this footer includes:
+- links to socials
+- link to Dr. Meirings email
+- access to credits page
+- access to feedback page
+- access to old website
+-->
 <footer id = "footer" class="footer"> </footer>
 </html>
