@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+things that link to different files
+such as CSS or Javascript
+The page title (that you see on the top of the tab) and the image displayed
+is also assigned here.
+ -->
+<head>
+    <meta charset="UTF-8">
+    <meta Content-Type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/header/ravioli.png"/> <!-- Website icon at top of tab -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/shared/JS/script.js"></script>
+    <script src="/resources/resources.js"></script>
+    <link rel="stylesheet" href="/shared/css/fonts.css">
+    <link rel="stylesheet" href="/shared/css/style.css"/>
+    <link rel="stylesheet" href="/resources/resources.css"/>
+    <title>Beavertronics</title>
+</head>
+
+<!-- 
+there is javascript (in /shared/JS/script.js) that injects a header
+that is used on every page. this header includes:
+- the dropdown menu,
+- links to pages on top bar
+- beavertronics icon 
+- beavertronics title
+-->
+<header id = "header" class = "header"></header>
+<div id="DropdownMenu" class="dropdown-links hidden"></div>
+    
+<!-- 
+this is the main body that contains everything 
+-->
+<body>
+
+    <!-- 
+    this divider contains the splash screen on top of the website
+    it also contains the "resources" title above the splash screen
+    -->
+    <div class="splash-screen-wrapper prevent-select">
+        <img class="splash-screen" src="/assets/pages/resources/Splash.png" alt="Team picture">
+        <div class = "centered"> <h1> RESOURCES </h1> </div>
+    </div>
+
+    <!-- 
+    text is put here when you click on the things in the divider below, i think?
+    -->
+    <div class = "resourceContainterContainer" id="generalText">
+        <div class = "resourceText" id="resourceTextContainer">
+        </div>
+    </div>
+
+    <!-- 
+    these buttons allow for text to be displayed in the above divider, I think?
+    -->
+    <div class = "resourceButtonContainer" id = "buttonDiv1"> 
+        <button type="button" class = "resourceButton" id = "button2"> General Resources </button>
+        <button type="button" class = "resourceButton" id = "button3"> Mechanical        </button>
+        <button type="button" class = "resourceButton" id = "button4"> Electrical        </button>
+        <button type="button" class = "resourceButton" id = "button5"> Software          </button>
+        <button type="button" class = "resourceButton" id = "button6"> Design            </button>
+        <button type="button" class = "resourceButton" id = "button7"> Leadership        </button> 
+        <button type="button" class = "resourceButton" id = "button8"> Business          </button>
+    </div>
+</body>
+</html>

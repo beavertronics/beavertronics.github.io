@@ -7,16 +7,16 @@ such as CSS or Javascript
 The page title (that you see on the top of the tab) and the image displayed
 is also assigned here.
  -->
-</head>
+<head>
     <meta charset="UTF-8">
     <meta Content-Type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../assets/header/ravioli.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./JS/fullscreen.js"></script>
+    <script src="/shared/JS/script.js"></script>
     <link rel="stylesheet" href="/shared/css/fonts.css">
     <link rel="stylesheet" href="/shared/css/style.css"/>
-    <link rel="stylesheet" href="./CSS/school-construction.css">
+    <link rel="stylesheet" href="./CSS/dlc.css">
     <title>Beavertronics</title>
 </head>
 
@@ -28,27 +28,38 @@ that is used on every page. this header includes:
 - beavertronics icon 
 - beavertronics title
 -->
-<header>
-    <h1 class="header-text">
-        <a class="header-link" href="../DLC/">
-            Back
-        </a>
-    </h1>
-</header>
+<header id = "header" class = "header"></header>
+<div id="DropdownMenu" class="dropdown-links hidden"></div>
 
 <!-- 
 this is the main body that contains everything 
 -->
-<body> 
-    <iframe allowfullscreen=True
-        src="https://dwpwebcams.com/bhs/canvasvideo1.php">
-    </iframe>
+<body>
+    <!-- 
+    the links below all link to DLC pages
+    ...
+    there is currently only one
+    -->
+    <h1>
+        <a class="link_cointainer" href="/DLC/school-construction.html">school construction</a>
+    </h1>
+    <h1>TBD</h1>
+    <h1>TBD</h1>
+    <h1>TBD</h1>
+    <h1>TBD</h1>
+    <h1>TBD</h1>
+    <h1>TBD</h1>
+    <h1>TBD</h1>
 </body>
 
 <!-- 
-this footer, unlike the other ones,
-is just for spacing and nothing more
-:D 
+similar to above with the header, there is Javascript that injects a universal footer
+this footer includes:
+- links to socials
+- link to Dr. Meirings email
+- access to credits page
+- access to feedback page
+- access to old website
 -->
-<footer></footer>
+<footer id = "footer" class="footer"> </footer>
 </html>

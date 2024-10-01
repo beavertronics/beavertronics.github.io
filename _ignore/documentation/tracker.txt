@@ -1,0 +1,24 @@
+the general journey
+file by file
+
+STEP 1: DOCUMENTING (only HTML)
+- main page: DONE
+- robots page (desktop): DONE
+- robots page (mobile): DONE
+- resources page: DONE
+- outreach page (desktop): DONE
+- outreach page (mobile): DONE
+- DLC (main): DONE
+- DLC (School Construction): DONE
+- credits page: DONE
+
+STEP 2: DOCUMENTING (only JS)
+- index.js: DONE
+- shared/JS/script.js: NEEDS COMMENTS
+- shared/JS/slideshow.js: NEEDS COMMENTS
+- robots.js: DONE
+- outreach.js: DONE
+- DLC/JS/fullscreen.js: DONE
+
+STEP 3: DOCUMENTING (only CSS)
+- credits.css: DONE
