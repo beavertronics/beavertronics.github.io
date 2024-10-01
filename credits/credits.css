@@ -1,19 +1,12 @@
 /* for the disclaimer text at the top */
-.disclaimer_header{
+.centered{
     text-align: center; 
-    padding-bottom: 2.5%;
+    /* padding-bottom: 2.5%; */
 }
-
-/* for all links */
-/* a{
-    color: blue !important; 
-    text-decoration: none;
-    transition: color 0.2s;
-} */
 
 /* for the div of contributors
 just shifts to the right a little? */
-.contributors_div{
+.shifted_right {
     padding-left: 1%;
 }
 
