@@ -406,7 +406,7 @@ h1{
   height: 6vw;
   cursor: pointer;
   background-color: black;
-  mask-image: url("./assets/header//hamburg/hamburgerMenuIcon.png");
+  mask-image: url("/assets/header//hamburg/hamburgerMenuIcon.png");
   mask-size: cover;
   z-index: 100;
 }
