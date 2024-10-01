@@ -13,4 +13,4 @@ window.addEventListener('load', function () {
     document.getElementById("google calendar").remove()
     document.getElementById("alt calendar text").classList.toggle("hidden")
   } 
-})  
+})
