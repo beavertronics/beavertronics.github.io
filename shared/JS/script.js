@@ -21,15 +21,18 @@ function toggleDropdownMenu() {
   downMenu.classList.toggle("hidden")
 }
 
-// a function that runs when the webpage is done loading
-window.addEventListener('load', function () {
-
   // the dollar sign is used to select elements
   // so in the case of below, we are selecting the dropdown menu, footer, and header by their ids
   // then loading the HTML from the files that are inputted into the .load() function
+$(()=> {
   $("#DropdownMenu").load("/shared/dropdown-links.html")
   $("#footer").load("/shared/footer.html")
   $("#header").load("/shared/header.html")
+})
+
+// a function that runs when the webpage is done loading
+window.addEventListener('load', function () {
+
 
   // once the dropdown menu is loaded, we add an event listener that toggles the dropdown menu
   // being visible whenever the icon is clicked
@@ -43,6 +46,6 @@ window.addEventListener('load', function () {
   // if it tries to remove the last character, that can break it
   // there is seperate logic in resources.js that handles that, for this reason
   if (PAGE_URL.slice(-1) == "/" && !PAGE_URL.includes('resources')) {
-    // window.history.replaceState('page2', 'Title', PAGE_URL.substring(0, PAGE_URL.length - 1))
+    window.history.replaceState('page2', 'Title', PAGE_URL.substring(0, PAGE_URL.length - 1))
   }
 })
