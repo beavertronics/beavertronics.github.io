@@ -56,14 +56,14 @@
   border-radius: 50%;
   display: inline-block;
   /*transition: background-color 0.6s ease;*/
-  z-index: 20;
+  z-index: 2;
 }
 
 .dotContainer {
   position: relative;
   text-align:center;
   margin-top: 28%;
-  z-index: 20;
+  z-index: 2;
 
 }
 

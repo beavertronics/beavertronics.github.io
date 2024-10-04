@@ -439,6 +439,7 @@ h1{
   width: 100vw;
   display: flex;
   justify-content: right;
+  z-index: 20;
   /* padding-right: 32px; */
 
 }
@@ -449,6 +450,7 @@ h1{
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 119, 40);
+  z-index: 20;
   /* border-bottom-left-radius: 10px; */
 }
 .dropdown-link {
@@ -462,6 +464,7 @@ h1{
   /* margin-left: auto; */
   text-decoration: none;
   color: white;
+  z-index: 20;
 }
 html, body {
   overflow-x: hidden;
