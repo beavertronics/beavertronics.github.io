@@ -22,11 +22,11 @@ function toggleDropdownMenu() {
 }
 
 // the dollar sign is used to select elements
-  // so in the case of below, we are selecting the dropdown menu, footer, and header by their ids
-  // then loading the HTML from the files that are inputted into the .load() function
-  $("#DropdownMenu").load("/shared/dropdown-links.html")
-  $("#footer").load("/shared/footer.html")
-  $("#header").load("/shared/header.html")
+// so in the case of below, we are selecting the dropdown menu, footer, and header by their ids
+// then loading the HTML from the files that are inputted into the .load() function
+isElementLoaded("#header").then((selector) => { $("#header").load("/shared/header.html") })
+isElementLoaded("#DropDownMenu").then((selector) => { $("#DropdownMenu").load("/shared/dropdown-links.html") })
+isElementLoaded('#footer').then((selector) => { $("#footer").load("/shared/footer.html")})
 
 // a function that runs when the webpage is done loading
 window.addEventListener('load', function () {
