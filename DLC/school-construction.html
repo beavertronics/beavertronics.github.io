@@ -11,12 +11,12 @@ is also assigned here.
     <meta charset="UTF-8">
     <meta Content-Type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../assets/header/ravioli.png"/>
+    <link rel="icon" type="image/png" href="/assets/header/ravioli.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./JS/fullscreen.js"></script>
+    <script src="/DLC/JS/fullscreen.js"></script>
     <link rel="stylesheet" href="/shared/css/fonts.css">
     <link rel="stylesheet" href="/shared/css/style.css"/>
-    <link rel="stylesheet" href="./CSS/school-construction.css">
+    <link rel="stylesheet" href="/DLC/CSS/school-construction.css">
     <title>Beavertronics</title>
 </head>
 
@@ -28,27 +28,35 @@ that is used on every page. this header includes:
 - beavertronics icon 
 - beavertronics title
 -->
-<header>
-    <h1 class="header-text">
-        <a class="header-link" href="../DLC/">
-            Back
-        </a>
-    </h1>
-</header>
 
 <!-- 
 this is the main body that contains everything 
 -->
 <body> 
+
+    <!-- 
+    this is the text to go back
+    -->
+    <h1 class="center link-container">
+        <a class="header-link" href="/DLC/">
+            Back
+        </a>
+    </h1>
+
+    <!-- 
+    this contains the video source
+    -->
     <iframe allowfullscreen=True
         src="https://dwpwebcams.com/bhs/canvasvideo1.php">
     </iframe>
-</body>
 
-<!-- 
-this footer, unlike the other ones,
-is just for spacing and nothing more
-:D 
--->
-<footer></footer>
+    <!-- 
+    a divider containing information about the stream
+    -->
+    <div class="center link-container">
+        <a href="https://dwpwebcams.com/bhs/canvasvideo1.php">The video source can be found here</a> <br>
+        <a href="https://dwpwebcams.com/bhs/">You can find more features by going here and scrolling down</a>
+        </p>
+    </div>
+</body>
 </html>

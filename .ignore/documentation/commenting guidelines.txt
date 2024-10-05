@@ -1,0 +1,51 @@
+So, this is just a bare frame I made (9/30/24) for adding comments to your HTML files when you add / modify them.
+Below are templates for what comments should be above the head, header, body, and footer:
+    Head:
+        <!--
+        things that link to different files
+        such as CSS or Javascript
+        The page title (that you see on the top of the tab) and the image displayed
+        is also assigned here.
+        -->
+
+    Header:
+        <!-- 
+        there is javascript (in /shared/JS/script.js) that injects a header
+        that is used on every page. this header includes:
+        - the dropdown menu,
+        - links to pages on top bar
+        - beavertronics icon 
+        - beavertronics title
+        -->
+
+    Body:
+        <!-- 
+        this is the main body that contains everything 
+        -->
+
+    Footer:
+        <!-- 
+        similar to above with the header, there is Javascript that injects a universal footer
+        this footer includes:
+        - links to socials
+        - link to Dr. Meirings email
+        - access to credits page
+        - access to feedback page
+        - access to old website
+        -->
+
+
+In general when commenting files, you should break the current line and go down one when the line stretches too far to the right. Like this:
+    # this is a long sentence my favorite color is green did you know that bees should
+    # woah I just started a new line thats so cool!
+
+More specifically with HTML, comments should be formatted like this:
+    <!--
+    aaaaaaaaaaaaaaaa
+    -->
+
+With Javascript, comments should be like this
+    // aaaaaaaaaaaaaaaa
+    // bbbbbbbbbbbbbbbb
+    // cccccccccccccccc
+    function do_something() {}

@@ -22,3 +22,5 @@ STEP 2: DOCUMENTING (only JS)
 
 STEP 3: DOCUMENTING (only CSS)
 - credits.css: DONE
+- school-construction.css: DONE
+- DLC/CSS/index.css: DONE

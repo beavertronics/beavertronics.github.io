@@ -27,9 +27,9 @@ function toggleDropdownMenu() {
 // this is not in the loading function shown below because that makes the header and footer appearing take 
 // a long time. Instead, it loads at its own pace
 $(() => {
-  $("#header").load("/shared/header.html")
-  $("#DropdownMenu").load("/shared/dropdown-links.html")
-  $("#footer").load("/shared/footer.html")
+  $("#header").load("/shared/html/header.html")
+  $("#DropdownMenu").load("/shared/html/dropdown-links.html")
+  $("#footer").load("/shared/html/footer.html")
 })
 
 // a function that runs when the webpage is done loading
@@ -47,6 +47,6 @@ window.addEventListener('load', function () {
   // if it tries to remove the last character, that can break it
   // there is seperate logic in resources.js that handles that, for this reason
   if (PAGE_URL.slice(-1) == "/" && !PAGE_URL.includes('resources')) {
-    window.history.replaceState('page2', 'Title', PAGE_URL.substring(0, PAGE_URL.length - 1))
+    // window.history.replaceState('page2', 'Title', PAGE_URL.substring(0, PAGE_URL.length - 1))
   }
 })

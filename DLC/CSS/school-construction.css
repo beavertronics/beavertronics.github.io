@@ -1,46 +1,50 @@
+/* affects the entire body, and the HTML */
 body, html {
-    margin: 0;
-    padding: 0;
-    margin-top: 3.5%;
+
     width: 100%;
     height: 100%;
     background-color: black;
 }
 
-footer {
-    background-color: black;
+/* affects all paragraph text entries */
+p {
+    color: white;
 }
 
-header {
-    /* height: 3.5vw; */
-    background-color: black;
+/* affects all links */
+a {
+    color: white;
 }
 
-.header-text {
+/* a general class for centering something */
+.center {
     text-align: center;
 }
 
-.header-link {
-    text-decoration: none;
-    color: white;
+/*
+if there is anything that contains an <a> tag within, this shold be applied
+it makes it so that when you hover over the link it changes the color
+this does not directly apply to the link tag itself, but anything containing it
+*/
 
-    /* idk some stack overflow stuff */
-    /* https://stackoverflow.com/questions/11078509/how-to-increase-the-clickable-area-of-a-a-tag-button */
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    padding: 1em;
-    margin: -2em;
-}
-
-.header-text :hover {
+.link-container :hover {
     color: gray;
 }
 
-footer {
-    padding: 2vw;
+/* affects the link on the header */
+.header-link {
+    text-decoration: none;
+
+    /* idk some stack overflow stuff */
+    /* https://stackoverflow.com/questions/11078509/how-to-increase-the-clickable-area-of-a-a-tag-button */
+    /* display: inline-block; */
+    /* position: relative; */
+    /* z-index: 1; */
+    /* padding: 1em; */
+    /* margin: -2em; */
 }
 
+/* affects the iframe linking the video */
 iframe {
     width: 100%;
     height: 100%;
