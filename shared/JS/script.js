@@ -24,9 +24,13 @@ function toggleDropdownMenu() {
 // the dollar sign is used to select elements
 // so in the case of below, we are selecting the dropdown menu, footer, and header by their ids
 // then loading the HTML from the files that are inputted into the .load() function
-$("#header").load("/shared/header.html")
-$("#DropdownMenu").load("/shared/dropdown-links.html")
-$("#footer").load("/shared/footer.html")
+// this is not in the loading function shown below because that makes the header and footer appearing take 
+// a long time. Instead, it loads at its own pace
+$(() => {
+  $("#header").load("/shared/header.html")
+  $("#DropdownMenu").load("/shared/dropdown-links.html")
+  $("#footer").load("/shared/footer.html")
+})
 
 // a function that runs when the webpage is done loading
 window.addEventListener('load', function () {
