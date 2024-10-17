@@ -1,3 +1,7 @@
+// OH MY GOD
+// PLEASE COMMENT THIS
+// AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
 class resourcePage {
     constructor(title, text = "default", links = []) {
         this.title = title
