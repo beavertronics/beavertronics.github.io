@@ -1,6 +1,7 @@
 the general journey
 file by file
-
+add new entries once they have been documented
+--------------------------------------------------
 STEP 1: DOCUMENTING (only HTML)
 - main page: DONE
 - robots page (desktop): DONE
