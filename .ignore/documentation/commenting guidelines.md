@@ -42,7 +42,7 @@ For HTML, comments should generally look like this:
     blah blah blah blah balh
     -->
 
-However in each HTML files, the following should at the least have the following comments. More can be added to the files in addition to this, but this is the baseline for the comments.
+However in each HTML files, the following should at the least have the following comments. More can be added to the comment in addition to this, but this is the baseline for the comments.
 
 
 
