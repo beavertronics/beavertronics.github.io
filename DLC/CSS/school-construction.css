@@ -50,5 +50,6 @@ iframe {
     height: 100%;
     border: none; /* Remove iframe border */
     user-select: none; /* https://stackoverflow.com/questions/70029125/how-to-disable-iframe-from-being-highlighted */
+    display: flex;
     padding-bottom: 10vw;
 }
