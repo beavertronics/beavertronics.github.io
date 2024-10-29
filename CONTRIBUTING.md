@@ -3,4 +3,4 @@ welcome to the guide to contributing! This document will cover everything regard
 
 ***
 # Commenting
-To learn more about commenting standards and practices, go [here](/documentation/commenting%20guidelines.md)!
+To learn more about commenting standards and practices, go [here](/.documentation/commenting%20guidelines.md)!
