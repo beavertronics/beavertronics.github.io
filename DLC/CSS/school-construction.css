@@ -1,9 +1,13 @@
-/* affects the entire body, and the HTML */
+/* body */
 body, html {
-
     width: 100%;
     height: 100%;
     background-color: black;
+}
+
+/* removes scrolling in HTML, plus anything else */
+html {
+    overflow: hidden;
 }
 
 /* affects all paragraph text entries */

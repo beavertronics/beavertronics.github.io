@@ -1,16 +1,21 @@
-/* for the disclaimer text at the top */
+/* 
+for the disclaimer text at the top 
+*/
 .centered{
     text-align: center; 
-    /* padding-bottom: 2.5%; */
 }
 
-/* for the div of contributors
-just shifts to the right a little? */
+/* 
+for the div of contributors
+just shifts to the right a little? 
+*/
 .shifted_right {
     padding-left: 1%;
 }
 
-/* the bottom text that for some reason has a different amount of padding */
-.silly_bottom_text{
+/* 
+spacing to have the footer be normal and not at the top of the screen
+*/
+.spacer{
     padding-bottom: 5%;
 }
