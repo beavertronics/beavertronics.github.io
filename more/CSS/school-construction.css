@@ -31,7 +31,7 @@ it makes it so that when you hover over the link it changes the color
 this does not directly apply to the link tag itself, but anything containing it
 */
 
-.link-container :hover {
+.link-container:hover {
     color: gray;
 }
 
