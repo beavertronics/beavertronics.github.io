@@ -3,9 +3,10 @@
 2018: Revy the riveter
 2019: OOWA
 2020: Sandcrawler
-2021: x
-2022: x
-2023: 
-2024: 
+2021: Sandcrawler Again
+2022: Lanky
+2023: Lockpick
+2024: Beyonce
+2025: Radek
 
 https://beavertronics5970.wixsite.com/bhs-robotics/robots
