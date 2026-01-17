@@ -1,0 +1,39 @@
+.content {
+	max-width: 100ch;
+	margin: auto;
+}
+h3{
+	margin-top: 60px;
+	margin-bottom: 0px;
+    font-family: Futura;
+    font-weight: 400;
+	font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+p{
+	margin-top:5px;
+	margin-bottom: 10px;
+}
+ul{
+	margin-top:0px;
+}
+footer {
+	margin-top: 60px;
+}
+.AAAAAA {
+	color: red;
+}
+blockquote{
+	border: 1px solid black;
+	border-left: 0;
+	border-right: 0;
+	border-radius: 5px;
+	font-family: sans-serif;
+	padding: 3px;
+	padding-left: 5px;
+}
+.limitsize{
+	width: 49ch;
+	max-width: 100%;
+}

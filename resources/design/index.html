@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+things that link to different files
+such as CSS or Javascript
+The page title (that you see on the top of the tab) and the image displayed
+is also assigned here.
+ -->
+<head>
+    <meta charset="UTF-8">
+    <meta Content-Type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/header/ravioli.png"/> <!-- Website icon at top of tab -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/shared/JS/script.js"></script>
+    <link rel="stylesheet" href="/shared/css/fonts.css">
+    <link rel="stylesheet" href="/shared/css/style.css"/>
+    <link rel="stylesheet" href="/resources/resources.css"/>
+	<link rel="stylesheet" href="/resources/design/readable.css">
+    <title>Beavertronics</title>
+</head>
+
+<!-- 
+there is javascript (in /shared/JS/script.js) that injects a header
+that is used on every page. this header includes:
+- the dropdown menu,
+- links to pages on top bar
+- beavertronics icon 
+- beavertronics title
+-->
+<header id = "header" class = "header"></header>
+<div id="DropdownMenu" class="dropdown-links hidden"></div>
+    
+<!-- 
+this is the main body that contains everything 
+-->
+<body>
+
+    <!-- 
+    this divider contains the splash screen on top of the website
+    it also contains the "resources" title above the splash screen
+    -->
+    <div class="splash-screen-wrapper prevent-select">
+        <img class="splash-screen" src="/assets/pages/resources/Splash.png" alt="Team picture">
+        <div class = "centered"> <h1> CAD AND DESIGN </h1> </div>
+    </div>
+
+    <div class="content">
+        <h3 class="AAAAAA">WARNING</h3>
+        <p><strong>Before you begin, hear this: You will probably have to redo your CAD, <em class="AAAAAA">from scratch,</em> at least 3 times.</strong> Prepare yourself mentally for this.</p>
+
+        <h3>CAD/Onshape Basics</h3>
+        <p>CAD is short for Computer Aided Design. Basically, we make a 3D model of the robot before building it in real life.</p>
+        <p>Onshape is the software we use to do CAD. There are other CAD software,
+            such as Fusion360 and Solidworks, but we don't use those, we use Onshape.</p>
+        <p>To get free access to Onshape, <a href="https://www.onshape.com/en/education/sign-up">click here to create a student account</a>.</p>
+        <p>To learn the easy-peasy basics of onshape, <a href="https://www.youtube.com/watch?v=2utLjjkXpIg">this tutorial</a> is pretty good.</p>
+
+
+        <h3>CAD Golden Rules</h3>
+        <blockquote>If it feels like you are doing something over and over again, CAD has a way to make that faster.</blockquote>
+        <p>This is almost universally true, and you get the sense for it after a while, like, "I feel like there has to be a faster way to do this". 
+            Onshape in particular is designed to save you time, so if it feels like you're doing busy work, I guarantee there's a smarter way to do it.
+            Talk to people who know more about CAD.
+        </p>
+        <blockquote>READ THE GAME MANUAL A LOT!!!!</blockquote>
+        <p>You need to have a very good understanding of the rules in order to make a CAD that will pass inspection,
+            and you need a very good understanding of the game itself in order to design a robot that actually wins matches.</p>
+
+        <h3>Assemblies VS Part Studios</h3>
+        <p>The way to think about it is like this: Part Studios are where you CAD <em>individual parts</em>, and Assemblies 
+            are where you arrange parts together. There are a few rules that follow naturally from this:
+            <ul>
+                <li>Don't move parts around in a Parts Studio; instead, move them around in the Assembly. It's OK if they intersect/overlap in a Parts Studio,
+                    as long as they don't in an assembly.
+                </li>
+                <li>Never CAD the same part twice. If you need a copy of a part; ie, I need 2 wheels, not just one, import the same
+                        part from the Parts Studio into your Assembly twice.</li>
+                <li>You should always import parts into Assemblies, not Part Studios.</li>
+            </ul>
+        None of these are hard-and-fast rules, but don't break them unless you have a good reason to.</p>
+
+        <h3>Importing Parts</h3>
+        <p>You don't have to CAD Standard Hardware (Nuts, bolts, washers, etc)- It can be found under the "Standard Content" tab in "Insert".</p>
+        <p>In fact, almost all parts you can find in our shop already have CAD models. To get access to them, go 
+            to the onshape app store, search for <a href="https://cad.onshape.com/appstore/apps/Manufacturers%20Models/6004ec5e83c40b107c183347">FRCDesignApp</a>, 
+            and click Subscribe (it's free). This will give you a little button that you can click to import parts.</p>
+
+        <h3>Bolts, Rivets</h3>
+        <p>We use #10-32 bolts and 3/16" rivets for most fastening needs. Rivets are faster to assemble, but they don't work for as many scenarios.
+        </p>
+        <p> If you're using bolts, try to have as few as possible to constrain the part- It is 
+            pretty difficult to snap a steel bolt, and they take time to assemble, so don't use 10 billion of them (one is usually enough). If you're still worried, 
+            use a chonkier bolt (1/4-20 for instance) instead of adding more bolts. If you are putting a bolt through 1x1 or 1x2 tubing, the bolt will try to crush the tube.
+            To avoid this, make it so that the bolt goes through only one side of the tube and add clearance holes.
+        </p>
+        <p>
+            If you're using rivets, there is more to think about. Make sure that the forces on your structure are sideways- rivets are very strong against sheering
+            but they are weak if you try to pull them out. It's reasonable to include 3 or 4 rivets between 2 parts, but more than that is usually overkill.
+        </p>
+        <p>The most important thing to think about with fasteners is access- can we get to them easily to install/remove them when the structure is assembled? If no,
+            you need to fix it. Keep your clearance holes big where possible (preferrably 3/4") and the mechanical people will appreciate it.
+        </p>
+        <p>Finally, if you're CADding bolt holes, just CAD a point in your sketch and then use the Hole tool. This lets you select the actual bolt you are using
+            (ie #10-32) instead of having to memorize the correct hole diameter (like 0.201" or something). This is more clear to people looking at CAD, and also 
+            more resistant against silly mistakes.
+        </p>
+
+        <h3>How do I CAD gearboxes, belts/pulleys, and chain/sprockets?</h3>
+        <p>It's tricky to get the spacing just right for gears, belts/pulleys, chain/sprockets, etc. To help, there are some handy calculators on
+            <a href="https://www.reca.lc/">ReCalc</a>- the most useful ones are the Belt Calculator, the Chain Calculator, and the Gear Spacing Calculator.</p>
+        <p>We have a lot of these components already- you can see which ones we have and how many at the <a href="https://docs.google.com/spreadsheets/d/14EnzYybJ5NCyudB23L_Pemw4qqw0XF82XgHz-fuCoE4/edit?usp=sharing">Shop Inventory</a></p>
+        <p>Some Notes:</p>
+        <ul>
+            <li>A belt labeled 655-5M does NOT have 655 teeth; it is 655 millimeters, and at 5mm per belt tooth, is 131 teeth.</li>
+            <li>All of our belts are HTD-5M belts, which have 5mm pitch.</li>
+            <li>Some of our belts are 9mm wide, and others are 15mm</li>
+            <li>All of our gears are 20DP</li>
+            <li>We have mostly #35 chain and sprockets, but we have some #25 stuff also.</li>
+        </ul>
+
+        <h3>What am I even trying to make?</h3>
+        <p>The robot consists of multiple subsystems. Not every robot has every subsystem- ie, some years, you don't need a climb.</p>
+        <ul>
+            <li>Climb: This allows the robot to climb.</li>
+            <li>Shooter: This launches game pieces.</li>
+            <li>Drivetrain/Drivebase: This allows the robot to drive, and is BY FAR the most important subsystem. The term "drive<em>train</em>" refers just to the mechanical 
+                stuff that transfers power from motors to wheels, wheras the term "drive<em>base</em>" refers to the wheels, the frame, and the electronics; 
+                all the stuff that's require to drive. These terms are somewhat interchangable, though.
+            </li>
+            <li>Intake: Moves game pieces into the robot. These come in 3 major types: 
+                <ul><li> Over the bumper: The game piece is rolled up the bumper and into the robot</li>
+                    <li>Through the bumper: The game piece is pulled in through a gap in the bumper (not always legal)</li>
+                    <li>Under the bumper: The game piece goes under the bumper and then gets pulled into the robot.</li>
+                </ul>
+            </li>
+            <li>Indexer: This is the least well defined subsystem. It's job is simply to get game pieces from the intake to the shooter, without jamming.
+                Sometimes you can design your intake to feed directly into your shooter, but other times (especially in games where you control more than one game piece)
+                that's not a good idea.
+            </li>
+            <li>End Affector- There are 2 ways to move game pieces through the robot. You can have a part of the robot that grabs and moves with the game piece,
+                    or you can have each part of your robot be stationary, just passing the game piece along to the next stage. If you grab and move with the game piece, 
+                that's called an End Affector. End effectors are typically located on the End of an arm, and they Affect the game piece, so that's why they're named that way.</li>
+        </ul>
+        <p>I find that the best way to get ideas is to google for pictures of other teams' robots. For example, an image search for 
+        <a href="https://www.google.com/search?q=frc+intake&udm=2">"frc intake"</a> turns up a wealth of useful ideas.</p>
+        <p>This website has a compilation of many successful robots and their subsystems: <a href="https://www.projectb.net.au/resources/robot-mechanisms">Mechanism Encyclopedia</a></p>
+
+		<h3>Teams to Learn From</h3>
+		<ul>
+			<li><a href="https://www.team254.com/first/">Team 254</a>- They have very good season and robot documentation and are consistently a very good team.</li>
+			<li><a href="https://www.1690orbit.com/robots">Team 1690</a>- All of their CAD is freely available, and they do a good job not overcomplicating things.</li>
+		</ul>
+
+		<h3>Informational GIFs</h3>
+		<img class="limitsize" src="/assets/pages/resources/bot2910.gif"/>
+		<img class="limitsize" src="/assets/pages/resources/bot1690.gif"/>
+		<img class="limitsize" src="/assets/pages/resources/bot254.gif"/>
+		<img class="limitsize" src="/assets/pages/resources/bot3641.gif"/>
+		<img class="limitsize" src="/assets/pages/resources/bot3636.gif"/>
+		<img class="limitsize" src="/assets/pages/resources/kitbot.gif"/>
+		</div>
+
+<footer id = "footer" class="footer"></footer>
+	</body>
+</html>
