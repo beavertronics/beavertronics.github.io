@@ -281,6 +281,8 @@ h1{
   width: 50%;
   height: auto;
   border-radius: 2.5px;
+  min-width: 0;
+  flex-shrink: 0;
 }
 
 .robot-description {
@@ -297,7 +299,7 @@ h1{
   margin-top: 1%;
   margin-left: 5%;
   margin-right: 5%;
-  font-size: 125%;
+  font-size: clamp(14px, 1.5vw, 26px); /* font scaling to display size */
   font-family: Futura-lt;
   text-align: center;
   font-weight: light;
