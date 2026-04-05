@@ -1,21 +1,91 @@
-/* 
+/*
 for the disclaimer text at the top 
 */
 .centered{
-    text-align: center; 
+    font-weight: lighter;
+    font-size: clamp(12px, 1.25vw, 36px);
+    font-family: Futura, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-/* 
-for the div of contributors
-just shifts to the right a little? 
-*/
-.shifted_right {
-    padding-left: 1%;
+.contributors{
+    font-weight: bolder;
+    font-size: 5vw;
+    font-family: Futura, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: -5%;
 }
 
-/* 
-spacing to have the footer be normal and not at the top of the screen
-*/
-.spacer{
-    padding-bottom: 5%;
+#contributor-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4vw;
+    margin-top: -2.5%;
+    margin-bottom: 5%;
 }
+
+.contributor-cell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    background-color: #242323;
+    padding: clamp(15px, 4vw, 50px) clamp(15px, 4vw, 50px) clamp(5px, 1vw, 10px);
+    border-radius: clamp(10px, 2.5vw, 50px)
+}
+
+.contributor-initials {
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    font-size: clamp(12px, 5vw, 64px);
+}
+
+.contributor-grad-year {
+    color: #aaaaaa;
+    font-size: clamp(10px, 2vw, 16px);
+}
+
+.contributor-cell img{
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    border: 0.3vw solid white;
+}
+
+.contributor-pfp-fallback { /* added this because GitHub PFP API kept rate-limiting me and not loading images */
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: #f57029;
+    border: 0.3vw solid white;
+}
+
+/* mobile scaling stuff */
+@media (max-width: 850px) {
+    .contributor-cell img, .contributor-pfp-fallback {
+        width: 30vw;
+        height: 30vw;
+        border: 0.75vw solid white;
+    }
+    .contributor-initials {
+        font-size: clamp(16px, 12vw, 64px);
+    }
+    .contributor-grad-year {
+        font-size: clamp(12px, 4vw, 24px);
+    }
+    .contributor-cell {
+        border-radius: clamp(15px, 6vw, 50px);
+    }
+}
+
+/*!**/
+/*spacing to have the footer be normal and not at the top of the screen*/
+/**!*/
+/*.spacer{*/
+/*    padding-bottom: 5%;*/
+/*}*/
