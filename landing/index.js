@@ -9,7 +9,7 @@ window.addEventListener('load', showhide);
 function showhide() {
   let current_screen_width = window.innerWidth
 
-  // if the windows width is less then the minimum calender width,
+  // if the windows width is less then the minimum calendar width,
   // remove the calendar and display alternate text that the page is too small
   // and redirect them to the calendar externally 
   if (current_screen_width <= CALENDAR_MINIMUM_WIDTH) {
