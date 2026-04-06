@@ -242,7 +242,7 @@ h1{
   justify-content: space-evenly;
   align-items: center;
   font-family: Futura-lt;
-  font-weight: light;
+  font-weight: lighter;
   color: white;
 }
 
@@ -264,7 +264,6 @@ h1{
   font-weight: bolder;
   font-size: 2.5vw;
   font-family: Futura-lt, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: light;
 
 }
 
@@ -280,7 +279,7 @@ h1{
 .robot-images img {
   width: 50%;
   height: auto;
-  border-radius: 2.5px;
+  border-radius: 0.75vw;
   min-width: 0;
   flex-shrink: 0;
 }
@@ -288,6 +287,7 @@ h1{
 .robot-description {
   display: flex;
   margin-bottom: 5%;
+  align-items: flex-start;
 }
 
 /* .robot-description img {
@@ -299,11 +299,12 @@ h1{
   margin-top: 1%;
   margin-left: 5%;
   margin-right: 5%;
-  font-size: clamp(14px, 1.5vw, 26px); /* font scaling to display size */
+  /* font-size clamping no longer needed, now handled by JS */
+  /*font-size: clamp(14px, 1.5vw, 56px); !* font scaling to display size *!*/
+  font-size: 1.5vw;
   font-family: Futura-lt;
   text-align: center;
-  font-weight: light;
-
+  font-weight: lighter;
 }
 
 .robot-title-link {
@@ -334,7 +335,7 @@ h1{
   font-weight: bolder;
   font-family: Futura-m;
   font-size: 1.25vw;
-  font-weight: light;
+  font-weight: lighter;
 
 }
 
@@ -357,7 +358,7 @@ h1{
   margin-right: 12.5%;
   margin-bottom: 1%;
   padding-top: 2.5%;
-  font-weight: light;
+  font-weight: lighter;
 
   /* justify content left/right added in html */
 }
@@ -371,7 +372,7 @@ h1{
   flex-direction: row;
   padding-bottom: 2.5%;
   font-family: Futura-lt;
-  font-weight: light;
+  font-weight: lighter;
 
   /* text align left/right added in html */
 }
@@ -408,7 +409,7 @@ h1{
   height: 6vw;
   cursor: pointer;
   background-color: black;
-  mask-image: url("/assets/header//hamburg/hamburgerMenuIcon.png");
+  mask-image: url("/assets/header/hamburg/hamburgerMenuIcon.png");
   mask-size: cover;
   z-index: 100;
 }
@@ -438,7 +439,7 @@ h1{
   width: 50vw;
   z-index: 2;
   position: fixed;
-  width: 100vw;
+  width: 100vw;// reset to CSS default before measuring, so resize always starts fresh
   display: flex;
   justify-content: right;
   z-index: 20;
@@ -462,7 +463,7 @@ h1{
   margin-right: 32px;
   text-align: right;
   font-family: Futura;
-  font-weight: light;
+  font-weight: lighter;
   /* margin-left: auto; */
   text-decoration: none;
   color: white;
