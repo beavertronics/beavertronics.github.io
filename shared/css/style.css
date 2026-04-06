@@ -232,6 +232,29 @@ h1{
   background-color:black;
 }
 
+/* for the "donate" and "become a sponsor" buttons on the landing */
+.landing-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.landing-button {
+  background-color: rgba(34,34,34, 0);
+  border-color:rgba(245, 112, 41, 1);
+  border-width: 2px;
+  color: rgba(245, 112, 41, 1);
+  width: 180px;
+  height: 50px;
+  font-family: Futura;
+  font-weight: 400;
+  font-size: larger;
+  margin-top: 10px;
+}
+.landing-button:hover {
+  background-color: rgba(34, 34, 34);
+}
+
 /* editing the footer at the bottom of the page */
 .footer {
   width: 100%;

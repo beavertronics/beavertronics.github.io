@@ -20,3 +20,8 @@ function showhide() {
     document.getElementById("alt calendar text").classList.add("hidden")
   }
 }
+
+function donateClick() {
+  document.getElementById("donate-instructions").classList.remove("hidden")
+  document.getElementById("donate-instructions").style.display = ""
+}
