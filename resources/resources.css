@@ -10,7 +10,7 @@
     font-size: larger;
     margin-top: 10px;
     position: absolute;
-
+    cursor: pointer;
 }
 #button1 { margin-top: 0px;}
 #button2 { margin-top: 60px;}
