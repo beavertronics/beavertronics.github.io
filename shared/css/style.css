@@ -490,7 +490,7 @@ h1{
   width: 50vw;
   z-index: 2;
   position: fixed;
-  width: 100vw;// reset to CSS default before measuring, so resize always starts fresh
+  width: 100vw; /*reset to CSS default before measuring, so resize always starts fresh*/
   display: flex;
   justify-content: right;
   z-index: 20;
