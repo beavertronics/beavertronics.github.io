@@ -27,9 +27,36 @@ function on_resize() {
     // then set "currentBody" to desktop
     if(currentBody != "desktop") {
       $("#body").empty()
-      $("#body").load("/robots/body/desktop.html")
+      $("#body").load("/robots/body/desktop.html",fit_text)
       currentBody = "desktop"
+    } else {
+      fit_text()
     }
+  }
+}
+
+/*
+fits the text to its associated image
+ */
+function fit_text() {
+  let descriptions = document.querySelectorAll(".robot-description")
+
+  for (const description of descriptions) {
+    let img = description.querySelector("img")
+    let text = description.querySelector(".robot-description-text")
+
+    const adjust = () => {
+      text.style.fontSize = ""
+      let fontSize = parseFloat(window.getComputedStyle(text).fontSize)
+      /* -8 is because some characters extend below the image otherwise, like "g" and "j" */
+      while (text.clientHeight > img.clientHeight-8 && fontSize > 8) {
+        fontSize -= 0.5
+        text.style.fontSize = fontSize + "px"
+      }
+    }
+
+    if (img.complete) adjust()
+    else img.addEventListener('load', adjust)
   }
 }
 
