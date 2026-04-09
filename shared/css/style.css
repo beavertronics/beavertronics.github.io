@@ -232,6 +232,57 @@ h1{
   background-color:black;
 }
 
+/* for sponsor slideshow thingy */
+.sponsors-container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.sponsors-slide {
+  display: flex;
+  align-items: center;
+  animation: sponsors-slider 30s linear infinite; /* tweak the amount of seconds to make it faster/slower */
+}
+
+.sponsor-logos {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  padding-right: 4vw;
+}
+
+.sponsor-logo {
+  height: 8vw;
+  width: auto;
+  flex-shrink: 0;
+}
+
+/* for the "donate" and "become a sponsor" buttons on the landing */
+.landing-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.landing-button {
+  background-color: rgba(34,34,34, 0);
+  border-color:rgba(245, 112, 41, 1);
+  border-width: 2px;
+  color: rgba(245, 112, 41, 1);
+  width: 180px;
+  height: 50px;
+  font-family: Futura;
+  font-weight: 400;
+  font-size: larger;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.landing-button:hover {
+  background-color: rgba(34, 34, 34);
+}
+
 /* editing the footer at the bottom of the page */
 .footer {
   width: 100%;
