@@ -1,6 +1,3 @@
-Official website for the FIRST Robotics Team, 5970, Beavertronics!
+This branch is purely to redirect people who use the old link to the new website. It will redirect from https://beavertronics.github.io/ to https://team5970.org.
 
-You can find our contributing guidelines [here](/CONTRIBUTING.md)! <br>
-You can find our code of conduct [here](/CODE_OF_CONDUCT.md)!
-
-We worship Dean
+Please do not delete this branch!
