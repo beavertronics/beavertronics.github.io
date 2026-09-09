@@ -1,5 +1,5 @@
-// this enables you to fullscren by double clicking on the screen
-// pretty simple, but I wanted a JS file just for that
+// will make the document able to be full-screened when dbl click 
+// no calls, just needs to be imported in the html file
 document.addEventListener('dblclick', () => {
     if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen()
