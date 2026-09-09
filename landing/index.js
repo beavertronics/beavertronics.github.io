@@ -18,11 +18,11 @@ function showhide() {
   // remove the calendar and display alternate text that the page is too small
   // and redirect them to the calendar externally 
   if (current_screen_width <= CALENDAR_MINIMUM_WIDTH) {
-    document.getElementById("google calendar").classList.add("hidden")
-    document.getElementById("alt calendar text").classList.remove("hidden")
+    // document.getElementById("google calendar").classList.add("hidden")
+    // document.getElementById("alt calendar text").classList.remove("hidden")
   } else {
-    document.getElementById("google calendar").classList.remove("hidden")
-    document.getElementById("alt calendar text").classList.add("hidden")
+    // document.getElementById("google calendar").classList.remove("hidden")
+    // document.getElementById("alt calendar text").classList.add("hidden")
   }
 }
 

@@ -1,0 +1,89 @@
+/* fonts */
+@font-face { /* https://www.w3schools.com/css/css3_fonts.asp */
+    font-family: Futura;
+    /* src: url('./assets/fonts/FuturaLT-Light.woff') */
+    src: url('../assets/fonts/FuturaLT-Light.woff');
+}
+
+.robot-title-mobile {
+    font-weight: bolder;
+    font-size: 5vw;
+    font-family: Futura, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.robot-images-mobile {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 1%;
+  margin-top: 3%;
+}
+
+.robot-images-mobile img {
+  width: 100%;
+  height: auto;
+  border-radius: 2vw;
+}
+
+.robot-description-text-mobile {
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 95%;
+  font-family: Futura;
+  text-align: center;
+}
+
+/* combined left-robot-title and right-robot-title into robot-title. added style="text-align: left/right" in html */
+.robot-title {
+  font-weight: bolder;
+  font-size: 2.5vw;
+  font-family: Futura-lt, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.robot-images { 
+
+  /* Change these two (left and right) to move things more in/out */
+  margin-left: 16%; /* originally 5 */
+  margin-right: 16%; /* originally 5 */
+  margin-bottom: 1%;
+  margin-top: 10%;
+}
+
+.robot-images img {
+  width: 50%;
+  height: auto;
+  border-radius: 0.75vw;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.robot-description {
+  display: flex;
+  margin-bottom: 5%;
+  align-items: flex-start;
+}
+
+/* .robot-description img {
+  width: 80%;
+  height: 80%;
+} */
+
+.robot-description-text {
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* font-size clamping no longer needed, now handled by JS */
+  /*font-size: clamp(14px, 1.5vw, 56px); !* font scaling to display size *!*/
+  font-size: 1.5vw;
+  font-family: Futura-lt;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.robot-title-link {
+  color: black;
+  /* text-decoration: underline; */
+}

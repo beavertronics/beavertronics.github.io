@@ -1,0 +1,69 @@
+/* outreach */
+.outreach-info-mobile {
+    background-color: #242323;
+    color: white;
+    text-align: center;
+  }
+  
+  .subpage-title-mobile {
+    /* position: relative; */
+    /* display: flex; */
+    text-align: center;
+    font-size: 5vw;
+    font-family: Futura;
+    /* margin-left: 12.5%; */
+    /* margin-right: 12.5%; */
+    margin-bottom: 1%;
+    padding-top: 2.5%;
+    /* justify content left/right added in html */
+  }
+  
+  .outreach-image-mobile {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 1%;
+    margin-top: 3%;
+  }
+  
+  .outreach-image-mobile img {
+    width: 100%;
+    height: auto;
+    border-radius: 2.5px;
+  }
+
+.subpage-title {
+  position: relative;
+  display: flex;
+  font-size: 3vw;
+  font-family: Futura-n;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-bottom: 1%;
+  padding-top: 2.5%;
+  font-weight: lighter;
+
+  /* justify content left/right added in html */
+}
+/* ----------contents---------- */
+
+.subpage-content {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2.5%;
+  font-family: Futura-lt;
+  font-weight: lighter;
+
+  /* text align left/right added in html */
+}
+
+/* ----------content imgs---------- */
+
+.subpage-content img {
+  width: 50%;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
