@@ -5,183 +5,85 @@
     src: url('../assets/fonts/FuturaLT-Light.woff');
 }
 
-/* -------------------------------------------------------------------------------------- */
-
-/* robots */
 .robot-title-mobile {
     font-weight: bolder;
     font-size: 5vw;
     font-family: Futura, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     margin-top: 5%;
-  }
-  
-  .robot-images-mobile {
-    margin: auto;
-    width: 50%;
-    margin-bottom: 1%;
-    margin-top: 3%;
-  }
-  
-  .robot-images-mobile img {
-    width: 100%;
-    height: auto;
-    border-radius: 2vw;
-  }
-  
-  .robot-description-text-mobile {
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 95%;
-    font-family: Futura;
-    text-align: center;
-  }
-
-/* -------------------------------------------------------------------------------------- */
-
-/* outreach */
-.outreach-info-mobile {
-  background-color: #242323;
-  color: white;
-  text-align: center;
 }
 
-.subpage-title-mobile {
-  /* position: relative; */
-  /* display: flex; */
-  text-align: center;
-  font-size: 5vw;
-  font-family: Futura;
-  /* margin-left: 12.5%; */
-  /* margin-right: 12.5%; */
-  margin-bottom: 1%;
-  padding-top: 2.5%;
-  /* justify content left/right added in html */
-}
-
-.outreach-image-mobile {
+.robot-images-mobile {
   margin: auto;
   width: 50%;
   margin-bottom: 1%;
   margin-top: 3%;
 }
 
-.outreach-image-mobile img {
+.robot-images-mobile img {
   width: 100%;
   height: auto;
-  border-radius: 2.5px;
+  border-radius: 2vw;
 }
 
-/* .outreach-top-image-mobile {
-  display: flex;
-  position: relative;
+.robot-description-text-mobile {
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 95%;
+  font-family: Futura;
   text-align: center;
-  color: white;
-  justify-content: center;
-} */
+}
 
-/* https://www.w3schools.com/howto/howto_css_image_text.asp */
-/* .centered {
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-
-
-/* some w3schools stuff */
-/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
-* {box-sizing:border-box}
-
-/* Slideshow container */
-/* .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  padding: 2vw;
-} */
-
-/* Hide the images by default */
-/* .mySlides {
-  display: none;
-} */
-
-/* Next & previous buttons */
-/* .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-} */
-
-/* Position the "next button" to the right */
-/* .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-} */
-
-/* On hover, add a black background color with a little bit see-through */
-/* .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-} */
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
+/* combined left-robot-title and right-robot-title into robot-title. added style="text-align: left/right" in html */
+.robot-title {
   font-weight: bolder;
-  font-size: 5vw;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+  font-size: 2.5vw;
+  font-family: Futura-lt, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.robot-images { 
+
+  /* Change these two (left and right) to move things more in/out */
+  margin-left: 16%; /* originally 5 */
+  margin-right: 16%; /* originally 5 */
+  margin-bottom: 1%;
+  margin-top: 10%;
+}
+
+.robot-images img {
+  width: 50%;
   height: auto;
+  border-radius: 0.75vw;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.robot-description {
+  display: flex;
+  margin-bottom: 5%;
+  align-items: flex-start;
+}
+
+/* .robot-description img {
+  width: 80%;
+  height: 80%;
+} */
+
+.robot-description-text {
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* font-size clamping no longer needed, now handled by JS */
+  /*font-size: clamp(14px, 1.5vw, 56px); !* font scaling to display size *!*/
+  font-size: 1.5vw;
+  font-family: Futura-lt;
   text-align: center;
+  font-weight: lighter;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.robot-title-link {
+  color: black;
+  /* text-decoration: underline; */
 }
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* -------------------------------------------------------------------------------------- */
