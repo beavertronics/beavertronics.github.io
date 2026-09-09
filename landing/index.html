@@ -17,6 +17,7 @@ is also assigned here.
     <script src="index.js"></script>
     <script src="/shared/JS/slideshow.js"></script>
     <link rel="stylesheet" href="/shared/css/fonts.css"/>
+    <link rel="stylesheet" href="/landing/landing.css"/>
     <link rel="stylesheet" href="/shared/css/style.css"/>
     <link rel="stylesheet" href="/shared/css/slideshow.css"/>
     <title>Beavertronics</title>
@@ -88,10 +89,33 @@ this is the main body that contains everything
             </div>   
         </div>
 
-    <!-- splash screen at top of page 
-    <div class="splash-screen-wrapper">
-        <img class="splash-screen" src="./assets/main/2-edit-splashscreen.jpg" alt="Team picture">
-    </div>-->
+    <!-- Sponsors section -->
+    <h1>SPONSORS</h1>
+    <p class="text-content" style="text-align: center">We are incredibly grateful for the generous support of our sponsors.</p>
+
+    <!-- scrolling logos -->
+    <div class="sponsors-container">
+        <div class="sponsors-slide">
+            <div class="sponsor-logos" id="sponsors-set-1"></div>
+            <div class="sponsor-logos" id="sponsors-set-2"></div>
+        </div>
+    </div>
+
+    <!-- "Donate" and "Become a Sponsor" buttons -->
+    <div class="landing-button-container">
+        <button class="landing-button" onclick="donateClick()">Donate</button>
+        <button class="landing-button" onclick="window.location.href='mailto:sponsors@team5970.org'">Become a Sponsor</button>
+    </div>
+
+    <div class="landing-button-container">
+        <div id="donate-instructions" class="hidden" style="display: none">
+            <div id="donate-instructions-content" style="text-align: center">
+                <p class="text-content" style="text-align: center">To donate to us, select <b>BEAVERTON HIGH SCHOOL</b> from the <b>School</b> dropdown, then select <b>Donation to Robotics Club</b> from the <b>Item</b> dropdown.</p>
+                <button class="landing-button" onclick="window.open('https://or-beaverton-lite.intouchreceipting.com/', '_blank')">Got it!</button>
+                <p class="text-content" style="text-align: center">Click the "Got It!" button to navigate to the Beaverton School District donation website.<br>Thank you for your support!</p>
+            </div>
+        </div>
+    </div>
 
     <!-- 
     Below is a bunch of information regarding our team including a brief summary
@@ -151,44 +175,6 @@ this is the main body that contains everything
             <img src="https://static.wixstatic.com/media/cbe77e_31ae767b94c24dfdb2c4337c17eecf90~mv2_d_3600_2400_s_4_2.jpg/v1/fill/w_284,h_419,al_c,q_80,usm_1.20_1.00_0.01,enc_auto/cbe77e_31ae767b94c24dfdb2c4337c17eecf90~mv2_d_3600_2400_s_4_2.jpg" class="img">
         </div>
     </div>
-
-    <!-- Sponsors section -->
-    <h1>SPONSORS</h1>
-    <p class="text-content" style="text-align: center">We are incredibly grateful for the generous support of our sponsors.</p>
-
-    <!-- scrolling logos -->
-    <div class="sponsors-container">
-        <div class="sponsors-slide">
-            <div class="sponsor-logos" id="sponsors-set-1"></div>
-            <div class="sponsor-logos" id="sponsors-set-2"></div>
-        </div>
-    </div>
-
-    <!-- "Donate" and "Become a Sponsor" buttons -->
-    <div class="landing-button-container">
-        <button class="landing-button" onclick="donateClick()">Donate</button>
-        <button class="landing-button" onclick="window.location.href='mailto:sponsors@team5970.org'">Become a Sponsor</button>
-    </div>
-
-    <div class="landing-button-container">
-        <div id="donate-instructions" class="hidden" style="display: none">
-            <div id="donate-instructions-content" style="text-align: center">
-                <p class="text-content" style="text-align: center">To donate to us, select <b>BEAVERTON HIGH SCHOOL</b> from the <b>School</b> dropdown, then select <b>Donation to Robotics Club</b> from the <b>Item</b> dropdown.</p>
-                <button class="landing-button" onclick="window.open('https://or-beaverton-lite.intouchreceipting.com/', '_blank')">Got it!</button>
-                <p class="text-content" style="text-align: center">Click the "Got It!" button to navigate to the Beaverton School District donation website.<br>Thank you for your support!</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 
-    this is the link to the calendar that is on the bottom
-    there is also Javascript that should, in theory delete the iframe if the screen is too small
-    and instead display the text entry below it that links them externally to the calendar
-    however that code does not seem to be working so...
-    -->
-    <h1><a style="color: black; text-decoration: underline;" target="_blank" href="https://calendar.google.com/calendar/u/0/r?cid=beavertronics5970@gmail.com">Calendar</a></h1>
-    <iframe class="calendar" style="width: 40vw; height: 30vw;" scrolling="no" id="google calendar" src="https://calendar.google.com/calendar/embed?src=beavertronics5970%40gmail.com&ctz=America%2FLos_Angeles"></iframe>
-    <p id="alt calendar text" style="text-align: center;" class="hidden">Sorry, the screen is too small for the calendar to be displayed. Please click the "Calendar" text above, or click <a style="color: blue;" target="_blank" href="https://calendar.google.com/calendar/u/0/r?cid=beavertronics5970@gmail.com">here</a> to open the calendar in a different page!</p>
 </body>
 
 <!-- 
