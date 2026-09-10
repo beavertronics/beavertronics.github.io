@@ -89,7 +89,8 @@ h1{
 
 /* hidden class */
 .hidden {
-  visibility: hidden !important;
+  /* visibility: hidden !important; */
+  display: none;
 }
 
 /* visible class */
