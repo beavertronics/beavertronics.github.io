@@ -107,7 +107,7 @@ h1{
 /* formatting for media */
 @media (max-width: 850px) {
 
-  .links {
+  .links a {
     display: none;
   }
 
