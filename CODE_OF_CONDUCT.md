@@ -1,2 +1,2 @@
-# The Beavertronics Code Of Conduct
-Do good code?
+# Beavertronics Code Of Conduct
+TODO
