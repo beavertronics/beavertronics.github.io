@@ -1,23 +1,18 @@
-const contributors = [
-    { username: "willgames-afk", initials: "wk", gradYear: 2026 },
-    { username: "i1aw", initials: "cw", gradYear: 2027},
-    { username: "SketchedDoughnut", initials: "ap", gradYear: 2027},
-    { username: "BubbleShade", initials: "ok", gradYear: 2026},
-    { username: "NoahTheNerd", initials: "ng", gradYear: 2027},
-]
-
 async function loadContributors() {
+    const contributors = (await (await fetch('/assets/data/contributors.json')).json())
+    console.log(contributors)
     const grid = $("#contributor-grid")
 
-    for (const contributor of contributors) {
-        const response = await fetch(`https://api.github.com/users/${contributor.username}`)
+    for (const contributorUsername of Object.keys(contributors)) {
+        const contributor = contributors[contributorUsername]
+        const response = await fetch(`https://api.github.com/users/${contributorUsername}`)
         const data = await response.json()
 
         const cell = $(`
-            <a href="https://github.com/${contributor.username}" target="_blank" class="contributor-cell">
-                <img src="${data.avatar_url}" alt="${contributor.initials}">
-                <p class="contributor-initials">${contributor.initials}</p>
-                <p class="contributor-grad-year">Class of ${contributor.gradYear}</p>
+            <a href="https://github.com/${contributorUsername}" target="_blank" class="contributor-cell">
+                <img src="${data.avatar_url}" alt="${contributor['initials']}">
+                <p class="contributor-initials">${contributor['initials']}</p>
+                <p class="contributor-grad-year">Class of ${contributor['gradYear']}</p>
             </a>
         `)
 
