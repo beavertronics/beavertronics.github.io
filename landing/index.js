@@ -76,3 +76,14 @@ window.addEventListener("resize", function() {
   showhide()
   setSponsorsAnimation()
 })
+
+document.querySelectorAll('info-card-overlay').forEach(element => {
+  element.addEventListener('touchstart', () => {
+    element.style.opacity = 1
+    element.style.filter = 'blur(4px) brightness(50%)'
+  })
+
+  element.addEventListener('touchend', () => {
+    element.style = ''
+  })
+});
