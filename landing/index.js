@@ -1,16 +1,6 @@
 // all constants
 const CALENDAR_MINIMUM_WIDTH = 850; // I found this number by shrinking the page until the calendar seemed too dificult to read
 
-const sponsors = [
-  { name: "Autodesk", url: "https://www.autodesk.com/", logo: "/assets/main/sponsors/autodesk-logo.png" },
-  { name: "TE Connectivity", url: "https://www.te.com/", logo: "/assets/main/sponsors/te-connectivity-logo.svg" },
-  { name: "Intel", url: "https://www.intel.com/", logo: "/assets/main/sponsors/intel-logo.svg" },
-  { name: "Lam Research", url: "https://www.lamresearch.com/", logo: "/assets/main/sponsors/lam-research-logo.svg" },
-  { name: "West3D", url: "https://west3d.com/", logo: "/assets/main/sponsors/west3d-logo.png" },
-  { name: "Oregon Robotics Tournament & Outreach Program", url: "https://ortop.org/", logo: "/assets/main/sponsors/ortop-logo.png" },
-  { name: "FIRST Washington", url: "https://firstwa.org/", logo: "/assets/main/sponsors/firstwa-logo.png" },
-]
-
 function showhide() {
   let current_screen_width = window.innerWidth
 
@@ -31,16 +21,19 @@ function donateClick() {
   document.getElementById("donate-instructions").style.display = ""
 }
 
-function loadSponsors() {
-  sponsors.sort(() => Math.random() - 0.5)
+async function loadSponsors() {
+  const sponsors = (await (await fetch('/assets/data/sponsors.json')).json())
+  let sponsorNames = Object.keys(sponsors)
+  sponsorNames.sort(() => Math.random() - 0.5)
   const set1 = $("#sponsors-set-1")
   const set2 = $("#sponsors-set-2")
   const imageLoads = []
 
-  for (const sponsor of sponsors) {
+  for (const sponsorName of sponsorNames) {
+    const sponsor = sponsors[sponsorName]
     const logo = $(`
-            <a href="${sponsor.url}" target="_blank" class="sponsor-logo">
-                <img class="sponsor-logo" src="${sponsor.logo}" alt="${sponsor.name}">
+            <a href="${sponsor['url']}" target="_blank" class="sponsor-logo">
+                <img class="sponsor-logo" src="${sponsor['logo']}" alt="${sponsorName}">
             </a>
         `)
 

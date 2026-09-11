@@ -1,0 +1,36 @@
+{
+    "AutoDesk": {
+        "url": "https://www.autodesk.com/",
+        "logo": "/assets/main/sponsors/autodesk-logo.png"
+    },
+
+    "TE Connectivity": {
+        "url": "https://www.te.com/",
+        "logo": "/assets/main/sponsors/te-connectivity-logo.svg"
+    },
+
+    "Intel": {
+        "url": "https://www.intel.com/",
+        "logo": "/assets/main/sponsors/intel-logo.svg"
+    },
+
+    "Lam Research": {
+        "url": "https://www.lamresearch.com/",
+        "logo": "/assets/main/sponsors/lam-research-logo.svg"
+    },
+
+    "West3D": {
+        "url": "https://west3d.com/",
+        "logo": "/assets/main/sponsors/west3d-logo.png"
+    },
+
+    "Oregon Robotics Tournament & Outreach Program": {
+        "url": "https://ortop.org/",
+        "logo": "/assets/main/sponsors/ortop-logo.png"
+    },
+
+    "FIRST Washington": {
+        "url": "https://firstwa.org/",
+        "logo": "/assets/main/sponsors/firstwa-logo.png"
+    }
+}
