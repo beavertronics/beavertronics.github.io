@@ -77,6 +77,8 @@ window.addEventListener("resize", function() {
   setSponsorsAnimation()
 })
 
+
+// https://stackoverflow.com/questions/75974325/how-to-make-hover-work-correct-for-mobile
 document.querySelectorAll('info-card-overlay').forEach(element => {
   element.addEventListener('touchstart', () => {
     element.style.opacity = 1
