@@ -22,7 +22,7 @@ function donateClick() {
 }
 
 async function loadSponsors() {
-  const sponsors = (await (await fetch('/assets/data/sponsors.json')).json())
+  const sponsors = (await (await fetch('https://static.team5970.org/root/data/sponsors.json')).json())
   let sponsorNames = Object.keys(sponsors)
   sponsorNames.sort(() => Math.random() - 0.5)
   const set1 = $("#sponsors-set-1")

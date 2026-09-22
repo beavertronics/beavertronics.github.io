@@ -1,5 +1,5 @@
 async function loadContributors() {
-    const contributors = (await (await fetch('/assets/data/contributors.json')).json())
+    const contributors = (await (await fetch('https://static.team5970.org/root/data/contributors.json')).json())
     console.log(contributors)
     const grid = $("#contributor-grid")
 
