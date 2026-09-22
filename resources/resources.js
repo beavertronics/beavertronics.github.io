@@ -42,12 +42,12 @@ class IconLink {
 }
 
 const IconType = Object.freeze({
-    PRESENTATION: "../assets/pages/resources/Presentation.webp",
-    DOCX: "../assets/pages/resources/Docx.webp",
-    DOCS: "../assets/pages/resources/Docs.png",
-    SLIDES: "../assets/pages/resources/Slides.png",
-    VIDEO: "../assets/pages/resources/Video3.png",
-    WEB: "../assets/pages/resources/Web.webp",
+    PRESENTATION: "https://static.team5970.org/root/pages/resources/Presentation.webp",
+    DOCX: "https://static.team5970.org/root/pages/resources/Docx.webp",
+    DOCS: "https://static.team5970.org/root/pages/resources/Docs.png",
+    SLIDES: "https://static.team5970.org/root/pages/resources/Slides.png",
+    VIDEO: "https://static.team5970.org/root/pages/resources/Video3.png",
+    WEB: "https://static.team5970.org/root/pages/resources/Web.webp",
 });
 
 const generalText = new resourcePage(
