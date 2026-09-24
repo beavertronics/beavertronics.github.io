@@ -95,15 +95,14 @@ async function buildPage(body) {
   if (body == DESKTOP) { robotBody.replaceChildren(finalDesktopContainer) }
   else { robotBody.replaceChildren(finalMobileContainer) }
 
-  fit_text()
+  currentBody = body
 }
 
 // everytime the window resizes, this will run
 async function on_resize() {
   // if the screen size is small enough to change to the mobile page
-  if (window.innerWidth <= PAGE_MINIMUM_WIDTH && currentBody != MOBILE) {
-    await buildPage(MOBILE)
-    currentBody = MOBILE
+  if (window.innerWidth <= PAGE_MINIMUM_WIDTH) {
+    if (currentBody != MOBILE) { await buildPage(MOBILE) }
   } 
   
   // if the page size is fine for desktop
@@ -111,14 +110,10 @@ async function on_resize() {
     // create desktop page
     if (currentBody != DESKTOP) {
       await buildPage(DESKTOP)
-      currentBody = DESKTOP
-    }
-
-    // just adjust text
-    else { 
-      fit_text()
     }
   }
+
+  fit_text()
 }
 
 /*
