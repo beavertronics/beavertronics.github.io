@@ -24,8 +24,9 @@
   margin-left: 5%;
   margin-right: 5%;
   font-size: 95%;
-  font-family: Futura;
+  font-family: Futura-lt;
   text-align: center;
+  font-weight: lighter;
 }
 
 /* combined left-robot-title and right-robot-title into robot-title. added style="text-align: left/right" in html */
