@@ -36,6 +36,9 @@ async function buildPage(body) {
     // configure description
     robotDescription.innerHTML = entry['description']
     
+    // general configuration
+    robotTitle.classList.add("robot-title-link")
+
     // do desktop-specific configuration
     if (body == DESKTOP) {
       // configure title
