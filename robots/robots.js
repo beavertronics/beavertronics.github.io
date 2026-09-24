@@ -1,35 +1,46 @@
-// constants
-const ROBOTS_MINIMUM_WIDTH = 1120; // I found this number by shrinking the page until the robot image was squished enough to look weird
+const PAGE_MINIMUM_WIDTH = 1120; // I found this number by shrinking the page until the robot image was squished enough to look weird
+const DESKTOP = 'desktop'
+const MOBILE = 'mobile'
 
-// Switches the body between the mobile and desktop versions of the page
+// whether the page is mobile or desktop
 var currentBody = ""
+
+// loads the robot data
+async function fetchData(url) {
+  const resp = await fetch(url)
+  return await resp.json()
+}
+
+// builds the page based off of it being mobile or desktop
+function buildPage(body) {
+  // go through each robot entry and build page
+  const robots = fetchData("https://static.team5970.org/root/data/robots.json")
+
+  alert(Object.keys(robots))
+
+  for (let robot in Object.keys(robots)) {
+    let entry = robots[robot]
+  }
+}
 
 // everytime the window resizes, this will run
 function on_resize() {
-  let current_screen_width = window.innerWidth
-  if (current_screen_width <= ROBOTS_MINIMUM_WIDTH) {
-
-    // if the current page is not the mobile page,
-    // empty the body tag then load the mobile page HTML into it
-    // then set the "currentBody" to mobile 
-    if(currentBody != "mobile") { 
-      $("#body").empty()
-      $("#body").load("/robots/body/mobile.html")
-      currentBody = "mobile"
-    }
+  // if the screen size is small enough to change to the mobile page
+  if (window.innerWidth <= PAGE_MINIMUM_WIDTH && currentBody != MOBILE) {
+    buildPage()
+    currentBody = MOBILE
   } 
   
-  // if the page size is not too small
+  // if the page size is fine for desktop
   else {
+    // create desktop page
+    if (currentBody != DESKTOP) {
+      buildPage()
+      currentBody = DESKTOP
+    }
 
-    // if the current body is not the desktop,
-    // empty the body tag then load the desktop page HTML into it
-    // then set "currentBody" to desktop
-    if(currentBody != "desktop") {
-      $("#body").empty()
-      $("#body").load("/robots/body/desktop.html",fit_text)
-      currentBody = "desktop"
-    } else {
+    // just adjust text
+    else { 
       fit_text()
     }
   }
