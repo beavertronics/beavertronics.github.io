@@ -23,24 +23,25 @@ function donateClick() {
 
 async function loadSponsors() {
   const sponsors = (await (await fetch('https://static.team5970.org/root/data/sponsors.json')).json())
+  const parser = new DOMParser()
   let sponsorNames = Object.keys(sponsors)
   sponsorNames.sort(() => Math.random() - 0.5)
-  const set1 = $("#sponsors-set-1")
-  const set2 = $("#sponsors-set-2")
+  const set1 = document.getElementById("sponsors-set-1")
+  const set2 = document.getElementById("sponsors-set-2")
   const imageLoads = []
 
   for (const sponsorName of sponsorNames) {
     const sponsor = sponsors[sponsorName]
-    const logo = $(`
-            <a href="${sponsor['url']}" target="_blank" class="sponsor-logo">
-                <img class="sponsor-logo" src="${sponsor['logo']}" alt="${sponsorName}">
-            </a>
-        `)
+    const logo = parser.parseFromString(`
+      <a href="${sponsor['url']}" target="_blank" class="sponsor-logo">
+          <img class="sponsor-logo" src="${sponsor['logo']}" alt="${sponsorName}">
+      </a>
+    `, 'text/html').body.firstElementChild
 
     set1.append(logo)
-    set2.append(logo.clone())
-
-    const img = logo.find("img")[0]
+    set2.append(logo.cloneNode(true))
+    
+    const img = logo.querySelector('img')
     imageLoads.push(new Promise(resolve => {
       if (img.complete) resolve()
       else img.addEventListener("load", resolve)
