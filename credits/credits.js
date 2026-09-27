@@ -57,9 +57,10 @@ async function loadContributors() {
         const data = await response.json()
         let contributorInfo = jsonContributors[contributor['login']]
         if (!contributorInfo) { 
+            // icon from https://emojidb.org/question-mark-in-circle-emojis
             contributorInfo = {
-                'initials': 'N/A',
-                'gradYear': 'N/A'
+                'initials': '�',
+                'gradYear': '�'
             } 
         }
 
