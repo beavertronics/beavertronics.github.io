@@ -27,6 +27,7 @@ async function loadContributors() {
         known.push({
             ...jsonContributors[jsonContribKey],
             'url': `https://api.github.com/users/${jsonContribKey}`,
+            'html_url': `https://github.com/${jsonContribKey}`,
             'login': jsonContribKey
         })
     }
@@ -50,6 +51,7 @@ async function loadContributors() {
 
     // go through each contributor and display
     let sum = [...known, ...unknown]
+
     for (const contributor of sum) {
         const response = await fetch(contributor['url'])
         const data = await response.json()
