@@ -30,6 +30,7 @@ async function loadContributors() {
             } 
         }
 
+        // create their html cell
         const cell = $(`
             <a href="${contributor['html_url']}" target="_blank" class="contributor-cell">
                 <img src="${data.avatar_url}" alt="${contributorInfo['initials']}">
@@ -37,7 +38,6 @@ async function loadContributors() {
                 <p class="contributor-grad-year">Class of ${contributorInfo['gradYear']}</p>
             </a>
         `)
-
         grid.append(cell)
         cell.find('img').on('error', function() {
             $(this).replaceWith(`<div class="contributor-pfp-fallback"></div>`)
