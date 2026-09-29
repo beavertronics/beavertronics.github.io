@@ -5,6 +5,7 @@ async function loadContributors() {
     // load the JSON with info of contributors
     const jsonContributors = (await (await fetch('https://static.team5970.org/root/data/contributors.json')).json())
     const jsonContributorKeys = Object.keys(jsonContributors)
+    const parser = new DOMParser()
 
     // load from Github to compare and add any undocumented ones
     let githubContributors;
@@ -16,7 +17,7 @@ async function loadContributors() {
      }
 
     // create grid for all contributors
-    const grid = $("#contributor-grid")
+    const grid = document.getElementById("contributor-grid")
     // known and unknown contributors (whether they are in the json or not)
     let unknown = [];
     let known = [];
@@ -65,16 +66,17 @@ async function loadContributors() {
         }
 
         // create their html cell and display
-        const cell = $(`
+        const cell = parser.parseFromString(`
             <a href="${contributor['html_url']}" target="_blank" class="contributor-cell">
                 <img src="${data.avatar_url}" alt="${contributorInfo['initials']}">
                 <p class="contributor-initials">${contributorInfo['initials']}</p>
                 <p class="contributor-grad-year">Class of ${contributorInfo['gradYear']}</p>
             </a>
-        `)
-        grid.append(cell)
-        cell.find('img').on('error', function() {
-            $(this).replaceWith(`<div class="contributor-pfp-fallback"></div>`)
+        `, 'text/html').body.firstElementChild
+
+        grid.appendChild(cell)
+        cell.querySelector('img').addEventListener('error', function() {
+            cell.querySelector('img').innerHTML = `<div class="contributor-pfp-fallback"></div>`
         })
     }
 }
