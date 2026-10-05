@@ -1,20 +1,15 @@
 const BLACKLIST = 'blacklist'
 const HIDE_BLACKLIST = true
 
-async function loadContributors() {    
+async function loadContributors() {
+
     // load the JSON with info of contributors
     const jsonContributors = (await (await fetch('https://static.team5970.org/root/data/contributors.json')).json())
     const jsonContributorKeys = Object.keys(jsonContributors)
     const parser = new DOMParser()
 
     // load from Github to compare and add any undocumented ones
-    let githubContributors;
     const githubResponse = await fetch('https://api.github.com/repos/beavertronics/beavertronics.github.io/contributors')
-    if (githubResponse.status == 200) { githubContributors = await githubResponse.json() }
-    else { 
-        console.log('failed to access github api, defaulting')
-        githubContributors = undefined
-     }
 
     // create grid for all contributors
     const grid = document.getElementById("contributor-grid")
@@ -34,7 +29,9 @@ async function loadContributors() {
     }
 
     // if we succeeded in fetching contributors info
-    if (githubContributors) {
+    if (githubResponse.status == 200) {
+
+        const githubContributors = await githubResponse.json()
 
         // get all unknown users
         for (const githubContributor of githubContributors) {
