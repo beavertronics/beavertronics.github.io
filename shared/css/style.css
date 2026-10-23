@@ -49,6 +49,30 @@ h1{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+/* for the dropdown menu the hovered over one) container */
+.dropdown {
+  position: relative;
+}
+
+/* for the contents of the dropdown */
+.dropdown-content {
+  text-align: center;
+  display: none;
+  position: fixed;
+  background-color: #b62002;
+  left: 0;
+  min-width: 130px;
+  width: 100vw;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  padding: 15px;
+  overflow: auto;
+}
+
+/* event for when its hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* TODO */
 #title {
   z-index: 2;
