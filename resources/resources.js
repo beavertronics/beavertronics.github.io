@@ -165,7 +165,10 @@ const designText = new resourcePage(
             [
                 new IconLink(IconType.PRESENTATION, "https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/ugd/cbe77e_9eb057223f8e48eba7ce1ba0c26b578b.pdf"),
                 new IconLink(IconType.VIDEO, "https://ccb9a2f9-def6-419e-967f-aadead127dbb.filesusr.com/archives/cbe77e_d65718ceec6441898afae2ae9e939901.zip?dn=Zoom_recording_3dprinting.zip")
-
+            ]),
+        new ResourceLink("FRCDesign.org", "https://frcdesign.org/learning-course/", 
+            [
+                new IconLink(IconType.WEB, "https://frcdesign.org/learning-course/")
             ]),
     ]).getHtml()
 const leadershipText = new resourcePage(
